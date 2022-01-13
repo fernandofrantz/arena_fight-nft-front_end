@@ -6,9 +6,14 @@ export const StyledCardPreSale = styled.div`
   justify-content: center;
   align-items: center;
 
+  width: 100px;
+  height: 200px;
+
+  margin: 50px 25px 0px 25px;
+
+
   img {
-    width: 150px;
-    margin-left: 30px;
+    width: 100%;
   }
 
   .str {
