@@ -1,7 +1,9 @@
+import { HeaderLanding } from "../../components/HeaderLanding";
+
 export const Landing = () => {
   return (
     <div>
-      <h1>LandingPage</h1>
+      <HeaderLanding />
     </div>
   );
 };
