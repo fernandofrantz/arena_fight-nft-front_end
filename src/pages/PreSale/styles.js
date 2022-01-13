@@ -183,9 +183,5 @@ export const SectionNfts = styled.section`
   img {
     margin: 0px; 
   }
-
-  @media screen and (min-width: 768px) {
-    
-  }
 `;
 

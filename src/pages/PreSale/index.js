@@ -29,6 +29,7 @@ import Background from '../../assets/images/Background.png'
 
 import { CardPreSale } from "../../components/CardPreSale";
 import { PreSalePage, SectionNfts, StyledBar } from "./styles";
+import { SocialButtons } from "../../components/SocialButtons";
 
 export const PreSale = () => {
   return (
@@ -83,6 +84,7 @@ export const PreSale = () => {
               buyNow={BuyNow}
               />
         </SectionNfts>
+       <SocialButtons />
       </PreSalePage>
     </>
   );
