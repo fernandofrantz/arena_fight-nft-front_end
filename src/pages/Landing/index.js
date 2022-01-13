@@ -1,9 +1,9 @@
-import { HeaderLanding } from "../../components/HeaderLanding";
+import { HeaderGame } from "../../components/HeaderGame";
 
 export const Landing = () => {
   return (
     <div>
-      <HeaderLanding />
+      <HeaderGame />
     </div>
   );
 };
