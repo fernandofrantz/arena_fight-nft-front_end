@@ -3,8 +3,10 @@ import styled from 'styled-components'
 export const StyledHeader = styled.header`
     width: 100vw;
     height: 12%;
-    position: fixed;
 
+    position: fixed;
+    right: 0px;
+    top: 0px;   
     background-color: #00000090;
 
     display: flex;

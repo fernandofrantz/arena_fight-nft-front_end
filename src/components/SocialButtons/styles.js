@@ -8,7 +8,7 @@ export const StyledFooter = styled.aside`
     bottom: 10px;
 
     img {
-        width: 50px;
+        width: 40px;
     }
 
 
