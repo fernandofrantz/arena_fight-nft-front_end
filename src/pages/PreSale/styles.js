@@ -13,7 +13,7 @@ export const PreSalePage = styled.div`
   background-position: center;
   background-size: cover; */
 
-  background-color: #c9c9;
+  background-color: #230433;
 
   .div {
     background: url(Background);
@@ -30,8 +30,8 @@ export const PreSalePage = styled.div`
   align-items: center;
 
   .preSaleText {
-    width: 90%;
-    max-width: 450px;
+    width: 60%;
+    max-width: 400px;
   }
 
   .BackDiv {
@@ -46,24 +46,17 @@ export const PreSalePage = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
-    .BackDiv {
-      margin-top: 10px;
-      img {
-        max-width: 150px;
-      }
+  @media screen and (min-width: 768px) {
+    .preSaleText {
+      margin-bottom: 40px
     }
   }
 
-  @media screen and (min-width: 1440px) {
-    .BackDiv {
-      margin-top: 30px;
-      img {
-        max-width: 200px;
-      }
+  @media screen and (min-width: 768px) {
+    .preSaleText {
+      max-width: 550px;
     }
   }
-
 
 `;
 
@@ -72,10 +65,11 @@ export const StyledBar = styled.div`
   height: 50px;
   padding: 10px;
 
-  background-color: #FFF;
+  background-color: #d4d4d460;
   border-radius: 5px;
 
-  margin-top: 20px;
+
+  margin: 50px 0px 0px 0px;
   margin-bottom: 15%;
 
   .divButtons {
@@ -89,7 +83,7 @@ export const StyledBar = styled.div`
     width: 100%;
 
     .logo {
-      width: 35%;
+      width: 30%;
       z-index: 1;
     }
 
@@ -110,45 +104,68 @@ export const StyledBar = styled.div`
     .play {
       width: 100%;
       height: 100%;
-
     }
 
   }
   
-  .Logo {
-    height: 70px;
-  }
-
   .Buttons {
     height: 30px;
   }
 
-  @media screen and (min-width: 768px) {
-    height: 100px;
-    padding: 20px;
+  @media screen and (min-width:768px) {
+    width: 70%;
 
+    .divButtons {
+      .whitesection, .playsection {
+        width: 25%;
+      }
+
+      .logo {
+        width: 150px;
+      }
+    }
   }
 
   @media screen and (min-width: 1024px) {
-      height: 130px;
-      padding: 30px;
-  }
+    height: 70px;
 
-  @media screen and (min-width: 1024px) {
-      height: 130px;
-      padding: 30px;
+    margin: 10px 0px 80px 0px;
+    .divButtons {
+      .whitesection, .playsection {
+        width: 20%;
+      }
+      .logo {
+        width: 180px;
+      }
+    }
   }
 
   @media screen and (min-width: 1440px) {
-      height: 160px;
-      padding: 50px;
-      margin-top: 50px;
+    height: 90px;
+
+    margin: 40px 0px 120px 0px;
+    .divButtons {
+      .whitesection, .playsection {
+        width: 25%;
+      }
+      .logo {
+        width: 220px;
+      }
+    }
   }
 
-  @media screen and (min-width: 1440px) {
-      height: 200px;
-      padding: 130px;
-      margin-top: 150px;
+  @media screen and (min-width: 2560px) {
+    height: 120px;
+
+    margin: 70px 0px 150px 0px;
+    .divButtons {
+      .whitesection, .playsection {
+        width: 20%;
+      }
+      .logo {
+        width: 320px;
+      }
+    }
   }
 `;
 
@@ -160,10 +177,15 @@ export const SectionNfts = styled.section`
   align-items: center;
   justify-content: center;
 
+  width: 80%;
+  height: auto;
+
   img {
     margin: 0px; 
   }
 
-
+  @media screen and (min-width: 768px) {
+    
+  }
 `;
 
