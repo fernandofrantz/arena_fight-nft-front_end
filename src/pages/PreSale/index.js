@@ -18,16 +18,29 @@ import Wonakashi_189STR from "../../assets/images/NFT/Wonakashi/Wonakashi_189STR
 import Wonakashi_600bus from "../../assets/images/NFT/Wonakashi/Wonakashi_600buscut.png";
 import Wonakashi_CalmLotus from "../../assets/images/NFT/Wonakashi/Wonakashi_CalmLotuscut.png";
 
-import BuyNow from "../../assets/images/Buttons/buyNow_buttoncut.png";
+import BuyNow from "../../assets/images/Buttons/BuyNow.png";
+import PlayNow from "../../assets/images/Buttons/PlayNow.png";
+import PreSaleText from "../../assets/images/Buttons/PreSale.png";
+import Logo from "../../assets/images/Logo.png";
+import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
 
 import { CardPreSale } from "../../components/CardPreSale";
-import { SectionNfts } from "./styles";
+import { PreSalePage, SectionNfts, StyledBar } from "./styles";
 
 export const PreSale = () => {
   return (
     <>
-      <div>
+      <PreSalePage>
         <h1>PreSalePage</h1>
+
+        <StyledBar>
+          <img src={PlayNow} alt=""></img>
+          <img src={Logo} alt=""></img>
+          <img src={WhitepaperButton} alt=""></img>
+        </StyledBar>
+
+        <img className="preSaleText" src={PreSaleText} alt=""></img>
+
         <SectionNfts>
           <CardPreSale
             str={Bella_44STRcut}
@@ -60,7 +73,7 @@ export const PreSale = () => {
             buyNow={BuyNow}
           />
         </SectionNfts>
-      </div>
+      </PreSalePage>
     </>
   );
 };
