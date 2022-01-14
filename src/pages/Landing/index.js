@@ -18,6 +18,10 @@ export const Landing = () => {
     navigate(path);
   };
 
+  const sortThreeDifferentFighters = () => {
+    return Math.floor(Math.random() * 5);
+  };
+
   return (
     <>
       <HeaderLanding />
