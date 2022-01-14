@@ -17,15 +17,11 @@ export default createGlobalStyle`
         cursor: pointer;
     }
     body {
-        background-color: var(--mainGray);
         min-height: 100%;
         position: absolute;
         max-width: 100vw;
         width: 100%;
         height: 100%;
-    }
-    main, section {
-        background-color: var(--mainGray);
     }
     ul {
         list-style: none;

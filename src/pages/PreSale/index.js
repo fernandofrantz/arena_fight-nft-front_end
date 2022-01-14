@@ -23,6 +23,9 @@ import PlayNow from "../../assets/images/Buttons/PlayNow.png";
 import PreSaleText from "../../assets/images/Buttons/PreSale.png";
 import Logo from "../../assets/images/Logo.png";
 import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
+import BackButton from "../../assets/images/Buttons/BackButton.png";
+
+import Background from '../../assets/images/Background.png'
 
 import { CardPreSale } from "../../components/CardPreSale";
 import { PreSalePage, SectionNfts, StyledBar } from "./styles";
@@ -31,47 +34,54 @@ export const PreSale = () => {
   return (
     <>
       <PreSalePage>
-        <h1>PreSalePage</h1>
-
+        <div className="BackDiv">
+          <img src={BackButton} alt=""/>
+        </div>
         <StyledBar>
-          <img src={PlayNow} alt=""></img>
-          <img src={Logo} alt=""></img>
-          <img src={WhitepaperButton} alt=""></img>
+          <div className="divButtons">
+            <section className="whitesection">
+              <img className="Buttons play" src={PlayNow} alt=""></img>
+            </section>
+              <img className="logo" src={Logo} alt=""/>
+            <section className="playsection">
+              <img className="Buttons white" src={WhitepaperButton} alt=""></img>
+            </section>
+          </div>
         </StyledBar>
 
         <img className="preSaleText" src={PreSaleText} alt=""></img>
 
         <SectionNfts>
-          <CardPreSale
-            str={Bella_44STRcut}
-            fighter={Bella_ThornRosecut}
-            price={Bella_150busdcut}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            str={Barussi_69STR}
-            fighter={Barussi_HeavyFist}
-            price={Barussi_250BUSD}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            str={Dimitry_94cut}
-            fighter={Dimitry_WarTankcut}
-            price={Dimitry_320busdcut}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            str={Ulisses_139STR}
-            fighter={Ulisses_DeathDance}
-            price={Ulisses_450busd}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            str={Wonakashi_189STR}
-            fighter={Wonakashi_CalmLotus}
-            price={Wonakashi_600bus}
-            buyNow={BuyNow}
-          />
+            <CardPreSale
+              str={Bella_44STRcut}
+              fighter={Bella_ThornRosecut}
+              price={Bella_150busdcut}
+              buyNow={BuyNow}
+              />
+            <CardPreSale
+              str={Barussi_69STR}
+              fighter={Barussi_HeavyFist}
+              price={Barussi_250BUSD}
+              buyNow={BuyNow}
+              />
+            <CardPreSale
+              str={Dimitry_94cut}
+              fighter={Dimitry_WarTankcut}
+              price={Dimitry_320busdcut}
+              buyNow={BuyNow}
+              />
+            <CardPreSale
+              str={Ulisses_139STR}
+              fighter={Ulisses_DeathDance}
+              price={Ulisses_450busd}
+              buyNow={BuyNow}
+              />
+            <CardPreSale
+              str={Wonakashi_189STR}
+              fighter={Wonakashi_CalmLotus}
+              price={Wonakashi_600bus}
+              buyNow={BuyNow}
+              />
         </SectionNfts>
       </PreSalePage>
     </>
