@@ -1,7 +1,9 @@
+import { StyledLanding } from "./styles";
+
 export const Landing = () => {
   return (
-    <div>
-      <h1>LandingPage</h1>
-    </div>
+    <>
+      <StyledLanding></StyledLanding>
+    </>
   );
 };
