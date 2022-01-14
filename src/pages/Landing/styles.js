@@ -11,27 +11,30 @@ export const StyledLanding = styled.div`
 
   background-color: #3d1652;
 
-  img {
-    width: 100px;
-  }
-
   .fightToEarn {
     width: 220px;
+  }
+
+  .firstBg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const LogoAndButtons = styled.div`
-  width: 90%;
+  width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   padding-top: 50px;
 
   .preSale,
   .connectWallet {
-    width: 80px;
+    width: 70px;
     margin-top: 30px;
   }
 
@@ -42,8 +45,9 @@ export const LogoAndButtons = styled.div`
 
 export const ButtonsBar = styled.div`
   width: 90%;
+  height: 50px;
 
-  margin: 40px 0px 40px 0px;
+  margin: 40px 0px 30px 0px;
 
   display: flex;
   flex-direction: row;
@@ -55,12 +59,12 @@ export const ButtonsBar = styled.div`
 
   .myGym,
   .whitepaper {
-    width: 80px;
+    width: 70px;
     height: 20px;
   }
 
   .playNow {
-    width: 90px;
+    width: 100px;
   }
 `;
 
@@ -70,8 +74,98 @@ export const FigthersBox = styled.div`
   justify-content: center;
   align-items: center;
 
+  margin-top: 20px;
+
   .boxRandomFighters {
     width: 90%;
-    background-color: gray;
+    padding-top: 10px;
+    background-color: #c4c4c450;
+
+    .txtfighters {
+      width: 200px;
+    }
+  }
+
+  .randomFighters {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .fighters {
+      width: 70px;
+    }
+  }
+`;
+
+export const TravelingPlaces = styled.div`
+  width: 90%;
+  margin: 50px 0px 0px 0px;
+`;
+
+export const RoadMap = styled.div`
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .txt {
+    width: 180px;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .road {
+    width: 170px;
+    margin: 10px;
+  }
+`;
+
+export const Platforms = styled.div`
+  width: 90%;
+  margin: 40px 0px 0px 0px;
+
+  .tokenCodeComming {
+    width: 250px;
+  }
+`;
+
+export const TokenAllocation = styled.div`
+  width: 90%;
+
+  margin: 0px 0px 20px 0px;
+
+  .tokenAllocation {
+    width: 250px;
+  }
+`;
+
+export const MeetTheTeam = styled.div`
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 30px;
+  .meetTheTeam {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .personCard {
+    width: 220px;
+  }
+`;
+
+export const Partners = styled.div`
+  width: 90%;
+
+  margin: 20px 0px 0px 0px;
+  .partners {
+    width: 250px;
+  }
+
+  .partnersTxt {
+    width: 180px;
   }
 `;

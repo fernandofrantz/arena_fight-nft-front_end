@@ -80,35 +80,35 @@ export const PreSale = () => {
 
         <SectionNfts>
           <CardPreSale
-            id="1"
+            cls="1"
             str={Bella_44STRcut}
             fighter={Bella_ThornRosecut}
             price={Bella_150busdcut}
             buyNow={BuyNow}
           />
           <CardPreSale
-            id="2"
+            cls="2"
             str={Barussi_69STR}
             fighter={Barussi_HeavyFist}
             price={Barussi_250BUSD}
             buyNow={BuyNow}
           />
           <CardPreSale
-            id="3"
+            cls="3"
             str={Dimitry_94cut}
             fighter={Dimitry_WarTankcut}
             price={Dimitry_320busdcut}
             buyNow={BuyNow}
           />
           <CardPreSale
-            id="4"
+            cls="4"
             str={Ulisses_139STR}
             fighter={Ulisses_DeathDance}
             price={Ulisses_450busd}
             buyNow={BuyNow}
           />
           <CardPreSale
-            id="5"
+            cls="5"
             str={Wonakashi_189STR}
             fighter={Wonakashi_CalmLotus}
             price={Wonakashi_600bus}
