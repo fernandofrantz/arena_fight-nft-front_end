@@ -14,19 +14,19 @@ export const StyledFooter = styled.aside`
 
     @media screen and (min-width:768px) {
         img {
-            width: 60px;
+            width: 50px;
         }
     }
 
     @media screen and (min-width:1024px) {
         img {
-            width: 70px;
+            width: 60px;
         }
     }
 
     @media screen and (min-width:1440px) {
         img {
-            width: 80px;
+            width: 70px;
         }
     }
 

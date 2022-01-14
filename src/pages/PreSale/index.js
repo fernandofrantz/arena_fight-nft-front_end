@@ -31,21 +31,33 @@ import { CardPreSale } from "../../components/CardPreSale";
 import { PreSalePage, SectionNfts, StyledBar } from "./styles";
 import { SocialButtons } from "../../components/SocialButtons";
 
+import { useNavigate } from "react-router-dom";
+
 export const PreSale = () => {
+
+  const navigate = useNavigate()
+
+  const sendTo = (path) => {
+    navigate(path)
+  }
+
+
   return (
     <>
       <PreSalePage>
         <div className="BackDiv">
-          <img src={BackButton} alt=""/>
+          <img onClick={() => sendTo('/')} src={BackButton} alt=""/>
         </div>
         <StyledBar>
           <div className="divButtons">
             <section className="whitesection">
-              <img className="Buttons play" src={PlayNow} alt=""></img>
+              <img  onClick={() => sendTo('/play')} className="Buttons play" src={PlayNow} alt=""></img>
             </section>
-              <img className="logo" src={Logo} alt=""/>
+              <img onClick={() => sendTo('/')} className="logo" src={Logo} alt=""/>
             <section className="playsection">
-              <img className="Buttons white" src={WhitepaperButton} alt=""></img>
+              <a href="https://higor-vidal.gitbook.io/areafight/" target="_blank" rel="noreferrer">
+                <img  className="Buttons white" src={WhitepaperButton} alt=""></img>
+              </a>
             </section>
           </div>
         </StyledBar>

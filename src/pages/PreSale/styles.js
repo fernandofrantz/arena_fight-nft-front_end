@@ -45,6 +45,9 @@ export const PreSalePage = styled.div`
       max-width:120px;
     }
   }
+  .BackDiv img:hover {
+    cursor: pointer;
+  }
 
   @media screen and (min-width: 768px) {
     .preSaleText {
@@ -86,6 +89,9 @@ export const StyledBar = styled.div`
       width: 30%;
       z-index: 1;
     }
+    .logo:hover {
+      cursor: pointer;
+    }
 
     .whitesection {
       width: 40%;
@@ -104,6 +110,9 @@ export const StyledBar = styled.div`
     .play {
       width: 100%;
       height: 100%;
+    }
+    .play:hover{
+      cursor: pointer;
     }
 
   }

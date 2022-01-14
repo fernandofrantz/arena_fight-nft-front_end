@@ -18,19 +18,36 @@ import russia from '../../assets/images/Countrys/Russia.png'
 import southAfrica from '../../assets/images/Countrys/SouthAfrica.png'
 import spain from '../../assets/images/Countrys/Spain.png'
 
+import BackButton from "../../assets/images/Buttons/BackButton.png";
+
+import { useNavigate } from "react-router-dom";
+
+
 export const PlayNow = () => {
+
+  const navigate = useNavigate()
+
+  const sendTo = (path) => {
+    navigate(path)
+  }
+
+  const claimTokens = () => {}
+
+
   return (
     <>
       <HeaderGame />
       <StyledPlay >
-
+        <div className="BackDiv">
+          <img onClick={() => sendTo('/')} src={BackButton} alt=""/>
+        </div>
         <MainBar>
           <div className="aft">
             <img className='aftArea' src={aftArea} alt=""/>
-            <img className='claimButton' src={claimButton} alt=""/>
+            <img onClick={claimTokens} className='claimButton' src={claimButton} alt=""/>
           </div>
           <div>
-            <img className='logo' src={Logo} alt=""/>
+            <img onClick={() => sendTo('/')} className='logo' src={Logo} alt=""/>
           </div>
           <div>
             <img className='mintFighter' src={MintFighter} alt=""/>

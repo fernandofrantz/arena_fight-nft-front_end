@@ -7,9 +7,15 @@ import { StyledFooter } from './styles';
 export const SocialButtons = () => {
   return (
     <StyledFooter>
-      <img src={telegram} alt=''/>
-      <img src={discord} alt=''/>
-      <img src={twitter} alt=''/>
+      <a href='https://t.me/ArenaFightOficial' target='_blank' rel='noreferrer'>
+        <img src={telegram} alt=''/>
+      </a>
+      <a href='https://discord.com/invite/DzEbvWeYsQ' target='_blank' rel='noreferrer'>
+        <img src={discord} alt=''/>
+      </a>
+      <a href='https://twitter.com/ArenaFight1' target='_blank' rel='noreferrer'>
+        <img src={twitter} alt=''/>
+      </a>
     </StyledFooter>
   );
 };
