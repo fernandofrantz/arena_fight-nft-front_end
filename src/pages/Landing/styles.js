@@ -63,3 +63,15 @@ export const ButtonsBar = styled.div`
     width: 90px;
   }
 `;
+
+export const FigthersBox = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .boxRandomFighters {
+    width: 90%;
+    background-color: gray;
+  }
+`;
