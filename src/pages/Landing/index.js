@@ -9,19 +9,37 @@ import fightToEarn from "../../assets/images/Buttons/fightToEarn.png";
 import { ButtonsBar, LogoAndButtons, StyledLanding } from "./styles";
 import { HeaderLanding } from "../../components/HeaderLanding";
 
+import { useNavigate } from "react-router-dom";
+
 export const Landing = () => {
+  const navigate = useNavigate();
+
+  const sendTo = (path) => {
+    navigate(path);
+  };
+
   return (
     <>
       <HeaderLanding />
       <StyledLanding>
         <LogoAndButtons>
-          <img className="preSale" src={preSale} alt=""></img>
+          <img
+            onClick={() => sendTo("/pre-sale")}
+            className="preSale"
+            src={preSale}
+            alt=""
+          ></img>
           <img className="logo" src={logo} alt=""></img>
           <img className="connectWallet" src={connectWallet} alt=""></img>
         </LogoAndButtons>
         <ButtonsBar>
           <img className="myGym" src={myGym} alt=""></img>
-          <img className="playNow" src={playNow} alt=""></img>
+          <img
+            onClick={() => sendTo("/play")}
+            className="playNow"
+            src={playNow}
+            alt=""
+          ></img>
           <img className="whitepaper" src={whitepaper} alt=""></img>
         </ButtonsBar>
         <div>
