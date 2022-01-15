@@ -25,7 +25,7 @@ export const StyledHeader = styled.header`
 
   button {
     width: 80px;
-    height: 20px;
+    height: 30px;
 
     border: none;
     border-radius: 5px;

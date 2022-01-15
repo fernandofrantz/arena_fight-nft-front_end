@@ -176,21 +176,22 @@ export const ButtonsBar = styled.div`
   }
 `;
 
-export const BoxFighter = styled.div`
-
-`;
+export const BoxFighter = styled.div``;
 
 export const FigthersBox = styled.div`
-    background-image: url(${box});
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 30px;
 
   .boxRandomFighters {
-
-    width: 90%;
+    background-image: url(${box});
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
     padding: 20px 0px 10px 0px;
 
     .txtfighters {
