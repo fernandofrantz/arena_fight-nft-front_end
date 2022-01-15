@@ -1,6 +1,6 @@
 import { HeaderGame } from "../../components/HeaderGame";
 import { SocialButtons } from "../../components/SocialButtons";
-import { CountryFights, MainBar, StyledPlay } from "./styles";
+import { CountryFights, MainBar, StyledPlay,  Bgplay } from "./styles";
 
 import Logo from '../../assets/images/Logo.png'
 import MintFighter from '../../assets/images/Buttons/MintFighter.png'
@@ -36,7 +36,9 @@ export const PlayNow = () => {
 
   return (
     <>
+
       <HeaderGame />
+      <Bgplay>
       <StyledPlay >
         <div className="BackDiv">
           <img onClick={() => sendTo('/')} src={BackButton} alt=""/>
@@ -68,6 +70,7 @@ export const PlayNow = () => {
         </CountryFights>
         <SocialButtons />
       </StyledPlay>
+      </Bgplay>
     </>
   );
 };

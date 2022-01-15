@@ -1,5 +1,11 @@
 import styled from "styled-components";
+import background from "../../assets/images/image8.png"
 
+export const Bgplay = styled.div`
+    background-image: url(${background});
+    background-size: cover;
+    background-position: inherit;
+`;
 
 export const StyledPlay = styled.div`
 
@@ -7,7 +13,6 @@ export const StyledPlay = styled.div`
     height: 100%;
     min-height: 100vh;
 
-    background-color: #230433;
     
     padding-top: 30px;
 

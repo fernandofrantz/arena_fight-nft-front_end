@@ -25,10 +25,8 @@ import Logo from "../../assets/images/Logo.png";
 import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
 
-import Background from '../../assets/images/Background.png'
-
 import { CardPreSale } from "../../components/CardPreSale";
-import { PreSalePage, SectionNfts, StyledBar } from "./styles";
+import { PreSalePage, SectionNfts, StyledBar, } from "./styles";
 import { SocialButtons } from "../../components/SocialButtons";
 
 import { useNavigate } from "react-router-dom";
