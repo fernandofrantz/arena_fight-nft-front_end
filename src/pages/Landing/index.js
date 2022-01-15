@@ -94,97 +94,83 @@ export const Landing = () => {
     <>
       <HeaderLanding />
       <StyledLanding>
-        <Bg1>
-          <div className="firstBg">
-            <LogoAndButtons>
-              <img
-                onClick={() => sendTo("/pre-sale")}
-                className="preSale"
-                src={preSale}
-                alt=""
-              ></img>
-              <img className="logo" src={logo} alt=""></img>
-              <img className="connectWallet" src={connectWallet} alt=""></img>
-            </LogoAndButtons>
-            <ButtonsBar>
-              <img className="myGym" src={myGym} alt=""></img>
-              <img
-                onClick={() => sendTo("/play")}
-                className="playNow"
-                src={playNow}
-                alt=""
-              ></img>
-              <img className="whitepaper" src={whitepaper} alt=""></img>
-            </ButtonsBar>
-            <div>
-              <img className="fightToEarn" src={fightToEarn} alt=""></img>
-            </div>
+        <div className="firstBg">
+          <LogoAndButtons>
+            <img
+              onClick={() => sendTo("/pre-sale")}
+              className="preSale"
+              src={preSale}
+              alt=""
+            ></img>
+            <img className="logo" src={logo} alt=""></img>
+            <img className="connectWallet" src={connectWallet} alt=""></img>
+          </LogoAndButtons>
+          <ButtonsBar>
+            <img className="myGym" src={myGym} alt=""></img>
+            <img
+              onClick={() => sendTo("/play")}
+              className="playNow"
+              src={playNow}
+              alt=""
+            ></img>
+            <img className="whitepaper" src={whitepaper} alt=""></img>
+          </ButtonsBar>
+          <div>
+            <img className="fightToEarn" src={fightToEarn} alt=""></img>
           </div>
-        </Bg1>
-        <Bg2>
-          <FigthersBox className="secondBg">
-            <div className="boxRandomFighters">
-              <div className="randomFighters">
-                {threeRandomFighters.map((number, index) => {
-                  return (
-                    <img
-                      className="fighters"
-                      key={index}
-                      src={fighters[number]}
-                      alt=""
-                    ></img>
-                  );
-                })}
-              </div>
-              <img className="txtfighters" src={fightersTxt} alt=""></img>
+        </div>
+        <FigthersBox className="secondBg">
+          <div className="boxRandomFighters">
+            <div className="randomFighters">
+              {threeRandomFighters.map((number, index) => {
+                return (
+                  <img
+                    className="fighters"
+                    key={index}
+                    src={fighters[number]}
+                    alt=""
+                  ></img>
+                );
+              })}
             </div>
-          </FigthersBox>
-        </Bg2>
+            <img className="txtfighters" src={fightersTxt} alt=""></img>
+          </div>
+        </FigthersBox>
         {/* comentei aqui pq não tava no planejamento de bg depois tem que ver isso */}
-        <Bg3>
-          <Platforms>
-            <img src={tokeCodeComing} alt="" className="tokenCodeComming"></img>
-          </Platforms>
-          <TravelingPlaces>
-            <img src={tralveThree} alt=""></img>
-            <img src={tralveOne} alt=""></img>
-            <img src={tralveTwo} alt=""></img>
-          </TravelingPlaces>
-        </Bg3>
-        <Bg4>
-          <RoadMap>
-            <img className="txt" src={roadMapTxt} alt=""></img>
-            <div className="cardsRoad">
-              <img className="road" src={roadMapOne} alt=""></img>
-              <img className="road" src={roadMapTwo} alt=""></img>
-              <img className="road" src={roadMapThree} alt=""></img>
-            </div>
-          </RoadMap>
-        </Bg4>
-        <Bg5>
-          {/* <Platforms>
+        <Platforms>
+          <img src={tokeCodeComing} alt="" className="tokenCodeComming"></img>
+        </Platforms>
+        <TravelingPlaces>
+          <img src={tralveThree} alt=""></img>
+          <img src={tralveOne} alt=""></img>
+          <img src={tralveTwo} alt=""></img>
+        </TravelingPlaces>
+        <RoadMap>
+          <img className="txt" src={roadMapTxt} alt=""></img>
+          <div className="cardsRoad">
+            <img className="road" src={roadMapOne} alt=""></img>
+            <img className="road" src={roadMapTwo} alt=""></img>
+            <img className="road" src={roadMapThree} alt=""></img>
+          </div>
+        </RoadMap>
+        {/* <Platforms>
           <img src={tokeCodeComing} alt="" className="tokenCodeComming"></img>
         </Platforms> */}
-          <TokenAllocation>
-            <img src={tokenAllocation} alt="" className="tokenAllocation"></img>
-          </TokenAllocation>
-        </Bg5>
-        <Bg6>
-          <MeetTheTeam>
-            <img className="meetTheTeam" src={meetTheTeamImg} alt=""></img>
-            <div>
-              <img className="personCard" src={higor} alt=""></img>
-              <img className="personCard" src={gui} alt=""></img>
-              <img className="personCard" src={luiz} alt=""></img>
-            </div>
-          </MeetTheTeam>
-        </Bg6>
-        <Bg7>
-          <Partners>
-            <img className="partnersTxt" src={partnersTxt} alt=""></img>
-            <img className="partners" src={partners} alt=""></img>
-          </Partners>
-        </Bg7>
+        <TokenAllocation>
+          <img src={tokenAllocation} alt="" className="tokenAllocation"></img>
+        </TokenAllocation>
+        <MeetTheTeam>
+          <img className="meetTheTeam" src={meetTheTeamImg} alt=""></img>
+          <div>
+            <img className="personCard" src={higor} alt=""></img>
+            <img className="personCard" src={gui} alt=""></img>
+            <img className="personCard" src={luiz} alt=""></img>
+          </div>
+        </MeetTheTeam>
+        <Partners>
+          <img className="partnersTxt" src={partnersTxt} alt=""></img>
+          <img className="partners" src={partners} alt=""></img>
+        </Partners>
         <SocialButtons />
       </StyledLanding>
     </>
