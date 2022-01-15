@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import background1 from "../../assets/images/bgzin.png";
+import box from "../../assets/images/boxzinha.png";
 
 export const Bg1 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-content: center;
   background-image: url(${background1});
   background-repeat: no-repeat;
   width: 100vw;
-  height: 936vh;
   background-position-x: center;
   background-size: cover;
   background-attachment: fixed;
@@ -174,16 +176,22 @@ export const ButtonsBar = styled.div`
   }
 `;
 
+export const BoxFighter = styled.div`
+
+`;
+
 export const FigthersBox = styled.div`
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-image: url(${box});
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   .boxRandomFighters {
+
     width: 90%;
     padding: 20px 0px 10px 0px;
-    background-color: #c4c4c450;
 
     .txtfighters {
       width: 70%;
@@ -194,8 +202,7 @@ export const FigthersBox = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
-
+    justify-content: center;
     .fighters {
       width: 25%;
     }
