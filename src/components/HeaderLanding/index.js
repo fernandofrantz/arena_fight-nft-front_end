@@ -1,22 +1,24 @@
-import Logo from '../../assets/images/Logo.png'
-import ConnectMetamask from '../../assets/images/ConnectToMetamask.png'
-import UseWallet from '../../assets/images/UseWalletConnect.png'
+import Logo from "../../assets/images/Logo.png";
+import UseWallet from "../../assets/images/Buttons/walletconnect.png";
+import ConnectMetamask from "../../assets/images/Buttons/metamaskbutton.png";
 
-
-import { StyledHeader } from "./styles"
-
-
+import { StyledHeader } from "./styles";
 
 export const HeaderLanding = () => {
-    return (
-        <>
-            <StyledHeader>
-                <img className='logo' src={Logo} alt=''></img>
-                <div>
-                    <img className='button' src={ConnectMetamask} alt=''/>
-                    <img className='button' src={UseWallet} alt=''/>
-                </div>
-            </StyledHeader>
-        </>
-    )
-}
+  return (
+    <>
+      <StyledHeader>
+        <img className="logo" src={Logo} alt=""></img>
+        <div>
+          <button className="buttonUse">
+            <img className="usew" src={UseWallet} alt="" />
+          </button>
+          <button className="buttonMeta">
+            <img className="meta" src={ConnectMetamask} alt="" />
+            <p>metamask</p>
+          </button>
+        </div>
+      </StyledHeader>
+    </>
+  );
+};

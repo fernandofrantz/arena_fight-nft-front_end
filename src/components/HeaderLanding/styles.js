@@ -1,69 +1,131 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    width: 100vw;
-    height: 12vw;
+  width: 100vw;
+  height: 12vw;
 
-    position: fixed;
+  position: fixed;
 
-    background-color: #00000090;
+  background-color: #00000090;
 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    width: 10%;
+  }
+
+  div {
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+  }
 
+  button {
+    width: 80px;
+    height: 20px;
 
-    .logo {
-        width: 10%;
+    border: none;
+    border-radius: 5px;
+
+    background-color: whitesmoke;
+  }
+
+  button:hover {
+    transition: 1000ms;
+    background-color: lightblue;
+  }
+
+  .buttonUse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .usew {
+    width: 90%;
+  }
+
+  .meta {
+    width: 20%;
+  }
+
+  .buttonMeta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+      font-size: 9px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-height: 50px;
+
+    div {
+      width: 40%;
     }
 
-    .button {
-        width: 40%;
-        height: 150%;
+    .logo {
+      max-width: 30px;
+    }
+
+    button {
+      width: 100px;
+    }
+
+    .buttonMeta {
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-height: 50px;
+
+    .logo {
+      max-width: 40px;
     }
 
     div {
-        width: 50%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-
+      width: 30%;
     }
 
-    @media screen and (min-width: 768px) {
-        max-height: 50px;
-
-        div {
-            width: 40%;
-        }
-
-        .logo {
-            max-width: 30px;
-        }
+    button {
+      width: 110px;
     }
 
-    @media screen and (min-width: 1024px) {
-        max-height: 50px;
+    .buttonMeta {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
 
-        .logo {
-            max-width: 40px;
-        }
+  @media screen and (min-width: 2560px) {
+    max-height: 60px;
 
-        div {
-            width: 30%;
-        }
+    .logo {
+      max-width: 45px;
     }
 
-    @media screen and (min-width: 2560px) {
-        max-height: 60px;
-
-        .logo {
-            max-width: 45px;
-        }
-
-        div {
-            width: 20%;
-        }
+    div {
+      width: 20%;
     }
-`
+  }
+
+  button {
+    width: 140px;
+    height: 30px;
+  }
+
+  .buttonMeta {
+    p {
+      font-size: 15px;
+    }
+  }
+`;
