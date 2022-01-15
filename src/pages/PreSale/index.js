@@ -26,7 +26,7 @@ import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
 
 import { CardPreSale } from "../../components/CardPreSale";
-import { PreSalePage, SectionNfts, StyledBar } from "./styles";
+import { PreSalePage, SectionNfts, StyledBar, Bgpresale } from "./styles";
 import { SocialButtons } from "../../components/SocialButtons";
 
 import { useNavigate } from "react-router-dom";
@@ -40,6 +40,7 @@ export const PreSale = () => {
 
   return (
     <>
+    <Bgpresale>
       <PreSalePage>
         <div className="BackDiv">
           <img onClick={() => sendTo("/")} src={BackButton} alt="" />
@@ -117,6 +118,7 @@ export const PreSale = () => {
         </SectionNfts>
         <SocialButtons />
       </PreSalePage>
+      </Bgpresale>
     </>
   );
 };
