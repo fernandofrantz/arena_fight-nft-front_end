@@ -1,19 +1,19 @@
 import styled from "styled-components";
-import Background from '../../assets/images/bg#3.jpg';
+import background from '../../assets/images/bgpresale.png';
+
+export const Bgpresale = styled.div`
+  background-image: url(${background});
+  background-size: cover;
+    background-position: center;
+`;
 
 export const PreSalePage = styled.div`
-  width: 100vw;
   height: 100%;
 
   min-height: 100vh;
 
   padding-bottom:50px;
-/* 
-  background-image: url("../../assets/images/bg#3.jpg");
-  background-position: center;
-  background-size: cover; */
 
-  background-color: #230433;
 
   .div {
     background: url(Background);

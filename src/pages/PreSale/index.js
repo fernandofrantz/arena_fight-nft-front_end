@@ -25,15 +25,14 @@ import Logo from "../../assets/images/Logo.png";
 import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
 
-import Background from '../../assets/images/Background.png'
-
 import { CardPreSale } from "../../components/CardPreSale";
-import { PreSalePage, SectionNfts, StyledBar } from "./styles";
+import { PreSalePage, SectionNfts, StyledBar, Bgpresale } from "./styles";
 import { SocialButtons } from "../../components/SocialButtons";
 
 export const PreSale = () => {
   return (
     <>
+    <Bgpresale>
       <PreSalePage>
         <div className="BackDiv">
           <img src={BackButton} alt=""/>
@@ -86,6 +85,7 @@ export const PreSale = () => {
         </SectionNfts>
        <SocialButtons />
       </PreSalePage>
+      </Bgpresale>
     </>
   );
 };
