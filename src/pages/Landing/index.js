@@ -48,12 +48,7 @@ import {
   TokenAllocation,
   TravelingPlaces,
   Bg1,
-  Bg2,
-  Bg3,
-  Bg4,
-  Bg5,
-  Bg6,
-  Bg7,
+  BoxFighter,
 } from "./styles";
 
 import { HeaderLanding } from "../../components/HeaderLanding";
@@ -120,6 +115,7 @@ export const Landing = () => {
               <img className="fightToEarn" src={fightToEarn} alt=""></img>
             </div>
           </div>
+          <BoxFighter>
           <FigthersBox className="secondBg">
             <div className="boxRandomFighters">
               <div className="randomFighters">
@@ -137,6 +133,7 @@ export const Landing = () => {
               <img className="txtfighters" src={fightersTxt} alt=""></img>
             </div>
           </FigthersBox>
+          </BoxFighter>
           {/* comentei aqui pq não tava no planejamento de bg depois tem que ver isso */}
           <Platforms>
             <img src={tokeCodeComing} alt="" className="tokenCodeComming"></img>
