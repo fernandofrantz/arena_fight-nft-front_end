@@ -7,8 +7,6 @@ import background5 from "../../assets/images/bg5.png";
 import background6 from "../../assets/images/bg6.png";
 import background7 from "../../assets/images/bg7.png";
 
-
-
 export const Bg1 = styled.div`
   background-image: url(${background1});
   background-repeat: no-repeat;
@@ -22,6 +20,10 @@ export const Bg2 = styled.div`
   width: 100vw;
   background-position-x: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
 `;
 export const Bg3 = styled.div`
   background-image: url(${background3});
@@ -32,6 +34,7 @@ export const Bg3 = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  padding-bottom: 50px;
 `;
 export const Bg4 = styled.div`
   background-image: url(${background4});
@@ -43,6 +46,7 @@ export const Bg4 = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 20px 0px 20px 0px;
 `;
 export const Bg5 = styled.div`
   background-image: url(${background5});
@@ -54,6 +58,7 @@ export const Bg5 = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 40px 0px 20px 0px;
 `;
 export const Bg6 = styled.div`
   background-image: url(${background6});
@@ -65,6 +70,7 @@ export const Bg6 = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 20px 0px 20px 0px;
 `;
 export const Bg7 = styled.div`
   background-image: url(${background7});
@@ -77,6 +83,7 @@ export const Bg7 = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 30px 0px 30px 0px;
 `;
 
 export const StyledLanding = styled.div`
@@ -88,6 +95,7 @@ export const StyledLanding = styled.div`
   align-items: center;
   .fightToEarn {
     width: 80%;
+    margin-bottom: 40px;
   }
 
   .firstBg {
@@ -245,7 +253,7 @@ export const FigthersBox = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin-top: 50px;
+  margin: 25px 0px 25px 0px;
 
   .boxRandomFighters {
     width: 90%;
