@@ -21,6 +21,24 @@ export const StyledLanding = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  @media screen and (min-width: 768px) {
+    .fightToEarn {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .fightToEarn {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    .fightToEarn {
+      width: 40%;
+    }
+  }
 `;
 
 export const LogoAndButtons = styled.div`
@@ -40,6 +58,35 @@ export const LogoAndButtons = styled.div`
 
   .logo {
     width: 33%;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    .preSale,
+    .connectWallet {
+      width: 20%;
+      margin-top: 10%;
+    }
+
+    .logo {
+      width: 25%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 70%;
+  }
+
+  @media screen and (min-width: 2560px) {
+    .preSale,
+    .connectWallet {
+      width: 15%;
+      margin-top: 10%;
+    }
+
+    .logo {
+      width: 20%;
+    }
   }
 `;
 
@@ -69,6 +116,51 @@ export const ButtonsBar = styled.div`
 
   @media screen and (min-width: 375px) {
     height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+
+    .myGym,
+    .whitepaper {
+      width: 20%;
+      height: 50%;
+    }
+
+    .playNow {
+      width: 27%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 70%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 100px;
+
+    .myGym,
+    .whitepaper {
+      width: 18%;
+      height: 55%;
+    }
+
+    .playNow {
+      width: 25%;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    height: 180px;
+    .myGym,
+    .whitepaper {
+      width: 18%;
+      height: 55%;
+    }
+
+    .playNow {
+      width: 25%;
+    }
   }
 `;
 
@@ -100,6 +192,22 @@ export const FigthersBox = styled.div`
       width: 25%;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+
+    .boxRandomFighters {
+      width: 85%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 65%;
+  }
 `;
 
 export const Platforms = styled.div`
@@ -109,14 +217,54 @@ export const Platforms = styled.div`
   .tokenCodeComming {
     width: 85%;
   }
+
+  @media screen and (min-width: 768px) {
+    .tokenCodeComming {
+      width: 80%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 75%;
+  }
+
+  @media screen and (min-width: 2560px) {
+    width: 55%;
+  }
 `;
 
 export const TravelingPlaces = styled.div`
   width: 90%;
   margin: 50px 0px 0px 0px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   img {
     width: 90%;
+  }
+
+  @media screen and (min-width: 768px) {
+    img {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    img {
+      width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+
+  @media screen and (min-width: 2560px) {
   }
 `;
 
@@ -136,6 +284,41 @@ export const RoadMap = styled.div`
     width: 65%;
     margin: 10px;
   }
+
+  @media screen and (min-width: 768px) {
+    .cardsRoad {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      width: 45%;
+    }
+
+    .txt {
+      width: 30%;
+      margin: 50px 0px 0px 0px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .txt {
+      width: 25%;
+    }
+
+    .cardsRoad {
+      width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .cardsRoad {
+      width: 35%;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+  }
 `;
 
 export const TokenAllocation = styled.div`
@@ -145,6 +328,27 @@ export const TokenAllocation = styled.div`
 
   .tokenAllocation {
     width: 90%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .tokenAllocation {
+      width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .tokenAllocation {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .tokenAllocation {
+      width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
   }
 `;
 
@@ -163,10 +367,57 @@ export const MeetTheTeam = styled.div`
   .personCard {
     width: 80%;
   }
+
+  @media screen and (min-width: 768px) {
+    .meetTheTeam {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+
+    .personCard {
+      width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .meetTheTeam {
+      width: 50%;
+    }
+
+    .personCard {
+      width: 30%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .meetTheTeam {
+      width: 45%;
+    }
+
+    .personCard {
+      width: 25%;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+  }
 `;
 
 export const Partners = styled.div`
   width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   margin: 30px 0px 0px 0px;
   .partners {
@@ -177,5 +428,41 @@ export const Partners = styled.div`
   .partnersTxt {
     width: 60%;
     margin: 0px 0px 10px 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .partners {
+      width: 80%;
+      margin: 0px 0px 50px 0px;
+    }
+
+    .partnersTxt {
+      width: 45%;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .partnersTxt {
+      width: 30%;
+    }
+    .partners {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .partners {
+      width: 70%;
+      margin: 0px 0px 50px 0px;
+    }
+
+    .partnersTxt {
+      width: 35%;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
   }
 `;

@@ -139,9 +139,11 @@ export const Landing = () => {
         </TravelingPlaces>
         <RoadMap>
           <img className="txt" src={roadMapTxt} alt=""></img>
-          <img className="road" src={roadMapOne} alt=""></img>
-          <img className="road" src={roadMapTwo} alt=""></img>
-          <img className="road" src={roadMapThree} alt=""></img>
+          <div className="cardsRoad">
+            <img className="road" src={roadMapOne} alt=""></img>
+            <img className="road" src={roadMapTwo} alt=""></img>
+            <img className="road" src={roadMapThree} alt=""></img>
+          </div>
         </RoadMap>
         <TokenAllocation></TokenAllocation>
         <TokenAllocation>
