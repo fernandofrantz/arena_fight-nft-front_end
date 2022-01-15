@@ -1,16 +1,91 @@
 import styled from "styled-components";
+import background1 from "../../assets/images/bg1.png";
+import background2 from "../../assets/images/bg2.png";
+import background3 from "../../assets/images/bg3.png";
+import background4 from "../../assets/images/bg4.png";
+import background5 from "../../assets/images/bg5.png";
+import background6 from "../../assets/images/bg6.png";
+import background7 from "../../assets/images/bg7.png";
+
+
+
+export const Bg1 = styled.div`
+  background-image: url(${background1});
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position-x: center;
+  background-size: cover;
+`;
+export const Bg2 = styled.div`
+  background-image: url(${background2});
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position-x: center;
+  background-size: cover;
+`;
+export const Bg3 = styled.div`
+  background-image: url(${background3});
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+`;
+export const Bg4 = styled.div`
+  background-image: url(${background4});
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position-x: center;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+`;
+export const Bg5 = styled.div`
+  background-image: url(${background5});
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position-x: center;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+`;
+export const Bg6 = styled.div`
+  background-image: url(${background6});
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position-x: center;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+`;
+export const Bg7 = styled.div`
+  background-image: url(${background7});
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+`;
 
 export const StyledLanding = styled.div`
   width: 100vw;
   height: 100%;
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: #3d1652;
-
   .fightToEarn {
     width: 80%;
   }

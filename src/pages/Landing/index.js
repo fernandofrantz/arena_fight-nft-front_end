@@ -47,6 +47,13 @@ import {
   StyledLanding,
   TokenAllocation,
   TravelingPlaces,
+  Bg1,
+  Bg2,
+  Bg3,
+  Bg4,
+  Bg5,
+  Bg6,
+  Bg7,
 } from "./styles";
 
 import { HeaderLanding } from "../../components/HeaderLanding";
@@ -87,6 +94,7 @@ export const Landing = () => {
     <>
       <HeaderLanding />
       <StyledLanding>
+      <Bg1>
         <div className="firstBg">
           <LogoAndButtons>
             <img
@@ -112,6 +120,8 @@ export const Landing = () => {
             <img className="fightToEarn" src={fightToEarn} alt=""></img>
           </div>
         </div>
+        </Bg1>
+        <Bg2>
         <FigthersBox className="secondBg">
           <div className="boxRandomFighters">
             <div className="randomFighters">
@@ -129,24 +139,35 @@ export const Landing = () => {
             <img className="txtfighters" src={fightersTxt} alt=""></img>
           </div>
         </FigthersBox>
-        <Platforms>
+        </Bg2>
+        {/* comentei aqui pq não tava no planejamento de bg depois tem que ver isso */}
+        {/* <Platforms>
           <img src={tokeCodeComing} alt="" className="tokenCodeComming"></img>
-        </Platforms>
+        </Platforms> */}
+        <Bg3>
         <TravelingPlaces>
           <img src={tralveThree} alt=""></img>
           <img src={tralveOne} alt=""></img>
           <img src={tralveTwo} alt=""></img>
         </TravelingPlaces>
+        </Bg3>
+        <Bg4>
         <RoadMap>
           <img className="txt" src={roadMapTxt} alt=""></img>
           <img className="road" src={roadMapOne} alt=""></img>
           <img className="road" src={roadMapTwo} alt=""></img>
           <img className="road" src={roadMapThree} alt=""></img>
         </RoadMap>
-        <TokenAllocation></TokenAllocation>
+        </Bg4>
+        <Bg5>
+        <Platforms>
+          <img src={tokeCodeComing} alt="" className="tokenCodeComming"></img>
+        </Platforms>
         <TokenAllocation>
           <img src={tokenAllocation} alt="" className="tokenAllocation"></img>
         </TokenAllocation>
+        </Bg5>
+        <Bg6>
         <MeetTheTeam>
           <img className="meetTheTeam" src={meetTheTeamImg} alt=""></img>
           <div>
@@ -155,10 +176,13 @@ export const Landing = () => {
             <img className="personCard" src={luiz} alt=""></img>
           </div>
         </MeetTheTeam>
+        </Bg6>
+        <Bg7>
         <Partners>
           <img className="partnersTxt" src={partnersTxt} alt=""></img>
           <img className="partners" src={partners} alt=""></img>
         </Partners>
+        </Bg7>
         <SocialButtons />
       </StyledLanding>
     </>
