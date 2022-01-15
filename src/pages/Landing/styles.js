@@ -1,89 +1,18 @@
 import styled from "styled-components";
-import background1 from "../../assets/images/bg1.png";
-import background2 from "../../assets/images/bg2.png";
-import background3 from "../../assets/images/bg3.png";
-import background4 from "../../assets/images/bg4.png";
-import background5 from "../../assets/images/bg5.png";
-import background6 from "../../assets/images/bg6.png";
-import background7 from "../../assets/images/bg7.png";
+import background1 from "../../assets/images/bgzin.png";
+
 
 export const Bg1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(${background1});
   background-repeat: no-repeat;
   width: 100vw;
+  height: 936vh;
   background-position-x: center;
   background-size: cover;
-`;
-export const Bg2 = styled.div`
-  background-image: url(${background2});
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-position-x: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px 20px 0px;
-`;
-export const Bg3 = styled.div`
-  background-image: url(${background3});
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-size: cover;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding-bottom: 50px;
-`;
-export const Bg4 = styled.div`
-  background-image: url(${background4});
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-position-x: center;
-  background-size: cover;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 20px 0px 20px 0px;
-`;
-export const Bg5 = styled.div`
-  background-image: url(${background5});
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-position-x: center;
-  background-size: cover;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 40px 0px 20px 0px;
-`;
-export const Bg6 = styled.div`
-  background-image: url(${background6});
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-position-x: center;
-  background-size: cover;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 20px 0px 20px 0px;
-`;
-export const Bg7 = styled.div`
-  background-image: url(${background7});
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-position-y: center;
-  background-position-x: center;
-  background-size: cover;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 30px 0px 30px 0px;
+  background-attachment: fixed;
 `;
 
 export const StyledLanding = styled.div`
@@ -282,6 +211,7 @@ export const FigthersBox = styled.div`
 
   @media screen and (min-width: 1024px) {
     width: 80%;
+    height: 100vh;
 
     .boxRandomFighters {
       width: 85%;
