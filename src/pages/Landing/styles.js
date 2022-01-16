@@ -51,6 +51,10 @@ export const StyledLanding = styled.div`
       width: 40%;
     }
   }
+
+  .preSale {
+    width: 150px;
+  }
 `;
 
 export const LogoAndButtons = styled.div`
@@ -292,13 +296,25 @@ export const RoadMap = styled.div`
   align-items: center;
 
   .txt {
-    width: 62%;
+    width: 40%;
     margin: 20px 0px 20px 0px;
   }
 
   .road {
     width: 65%;
     margin: 10px;
+  }
+
+  .cardsRoad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+
+    img {
+      width: 25%;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -338,7 +354,7 @@ export const RoadMap = styled.div`
 `;
 
 export const TokenAllocation = styled.div`
-  width: 90%;
+  width: 80%;
 
   margin: 30px 0px 20px 0px;
 
@@ -376,12 +392,18 @@ export const MeetTheTeam = styled.div`
 
   margin-top: 30px;
   .meetTheTeam {
-    width: 90%;
+    width: 70%;
     margin-bottom: 20px;
   }
 
-  .personCard {
-    width: 80%;
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+
+    .personCard {
+      width: 30%;
+    }
   }
 
   @media screen and (min-width: 768px) {

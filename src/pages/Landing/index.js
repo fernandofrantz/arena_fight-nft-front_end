@@ -92,28 +92,28 @@ export const Landing = () => {
         <Bg1>
           <div className="firstBg">
             <LogoAndButtons>
-              <img
-                onClick={() => sendTo("/pre-sale")}
-                className="preSale"
-                src={preSale}
-                alt=""
-              ></img>
               <img className="logo" src={logo} alt=""></img>
-              <img className="connectWallet" src={connectWallet} alt=""></img>
+              {/* <img className="connectWallet" src={connectWallet} alt=""></img> */}
             </LogoAndButtons>
-            <ButtonsBar>
-              <img className="myGym" src={myGym} alt=""></img>
-              <img
+            {/* <ButtonsBar> */}
+            {/* <img className="myGym" src={myGym} alt=""></img> */}
+            {/* <img
                 onClick={() => sendTo("/play")}
                 className="playNow"
                 src={playNow}
                 alt=""
-              ></img>
-              <img className="whitepaper" src={whitepaper} alt=""></img>
-            </ButtonsBar>
+              ></img> */}
+            {/* <img className="whitepaper" src={whitepaper} alt=""></img> */}
+            {/* </ButtonsBar> */}
             <div>
               <img className="fightToEarn" src={fightToEarn} alt=""></img>
             </div>
+            <img
+              onClick={() => sendTo("/pre-sale")}
+              className="preSale"
+              src={preSale}
+              alt=""
+            ></img>
           </div>
           <FigthersBox className="secondBg">
             <div className="boxRandomFighters">
