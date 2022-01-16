@@ -129,7 +129,7 @@ export const StyledLanding = styled.div`
     }
 
     .preSale {
-      width: 35%;
+      width: 45%;
     }
   }
 
@@ -166,7 +166,7 @@ export const LogoAndButtons = styled.div`
     }
 
     .logo {
-      width: 25%;
+      width: 30%;
     }
   }
 
@@ -249,14 +249,8 @@ export const ButtonsBar = styled.div`
 
   @media screen and (min-width: 2560px) {
     height: 180px;
-    .myGym,
-    .whitepaper {
-      width: 18%;
-      height: 55%;
-    }
-
-    .playNow {
-      width: 25%;
+    .fightToEarn {
+      width: 100%;
     }
   }
 `;
@@ -281,6 +275,10 @@ export const FigthersBox = styled.div`
 
   .boxRandomFighters {
     .randomFighters {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
       .fighters {
         width: 25%;
       }
@@ -336,7 +334,21 @@ export const FigthersBox = styled.div`
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 18%;
+          width: 23%;
+        }
+      }
+      .txtfighters {
+        width: 60%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 220px;
+    .boxRandomFighters {
+      .randomFighters {
+        .fighters {
+          width: 20%;
         }
       }
       .txtfighters {
@@ -345,44 +357,30 @@ export const FigthersBox = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
-    height: 260px;
-    .boxRandomFighters {
-      .randomFighters {
-        .fighters {
-          width: 13%;
-        }
-      }
-      .txtfighters {
-        width: 40%;
-      }
-    }
-  }
-
   @media screen and (min-width: 1440px) {
-    height: 350px;
+    height: 250px;
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 12%;
+          width: 22%;
         }
       }
       .txtfighters {
-        width: 40%;
+        width: 50%;
       }
     }
   }
 
   @media screen and (min-width: 2560px) {
-    height: 550px;
+    height: 400px;
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 11%;
+          width: 44%;
         }
       }
       .txtfighters {
-        width: 35%;
+        width: 100%;
       }
     }
   }
@@ -398,7 +396,7 @@ export const Platforms = styled.div`
 
   @media screen and (min-width: 768px) {
     .tokenCodeComming {
-      width: 80%;
+      width: 70%;
     }
   }
 
@@ -411,7 +409,7 @@ export const Platforms = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
-    width: 45%;
+    width: 40%;
   }
 `;
 
@@ -430,13 +428,13 @@ export const TravelingPlaces = styled.div`
 
   @media screen and (min-width: 768px) {
     img {
-      width: 70%;
+      width: 30%;
     }
   }
 
   @media screen and (min-width: 1024px) {
     img {
-      width: 40%;
+      width: 30%;
     }
   }
 
@@ -444,6 +442,9 @@ export const TravelingPlaces = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
+    img {
+      width: 22%;
+    }
   }
 `;
 
@@ -460,6 +461,30 @@ export const RoadMap = styled.div`
   @media screen and (min-width: 425px) {
     img {
       width: 85%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    img {
+      width: 75%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    img {
+      width: 55%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    img {
+      width: 65%;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    img {
+      width: 55%;
     }
   }
 `;
@@ -487,7 +512,7 @@ export const TokenAllocation = styled.div`
 
   @media screen and (min-width: 1024px) {
     .tokenAllocation {
-      width: 50%;
+      width: 40%;
     }
   }
 
@@ -541,7 +566,7 @@ export const MeetTheTeam = styled.div`
     }
     div {
       .personCard {
-        width: 25%;
+        width: 30%;
       }
     }
   }
