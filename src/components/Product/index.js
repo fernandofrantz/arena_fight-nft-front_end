@@ -1,4 +1,5 @@
 import { Container } from './style';
+import { useState } from "react";
 
 export const ProductRender = ({product}) => {
 
@@ -8,7 +9,6 @@ export const ProductRender = ({product}) => {
     return (
         <Container>
             <img src={image} alt={name}></img>
-
         </Container>
     )
 }

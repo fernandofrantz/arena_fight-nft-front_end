@@ -1,10 +1,11 @@
-import { Container, DivTop, DivLogo, DivTitle, IconFighter } from "./style";
+import { Container, DivTop, DivLogo, DivTitle } from "./style";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/arenafight_logo.png"
 import mygym from "../../assets/MYGYMBUTTON.png"
-import iconfighters from "../../assets/Fighters.png"
 
-export const Header = () => {
+
+
+export const LutadorHeader = () => {
 
     const navigate = useNavigate();
     const handleClick = (path) => {
@@ -20,7 +21,6 @@ export const Header = () => {
             <DivLogo src={logo}/>
             </button>
             <DivTitle src={mygym}/>  
-            <IconFighter src={iconfighters}/>
          </DivTop>
         </Container>
     )

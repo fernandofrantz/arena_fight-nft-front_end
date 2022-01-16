@@ -8,10 +8,20 @@ export const DivLogo = styled.img`
     width: 150px;
     /* desktop width: 240px; */
     padding-top: 10%;
+    @media screen and (min-width:768px) {
+        width: 200px;
+        padding-top: 0;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 230px;
+    }
 `;
 export const DivTitle = styled.img`
     width: 260px;
     /* desktop width: 400px; */
+    @media screen and (min-width:768px) {
+        width: 400px;
+    }
 `;
 export const DivTop = styled.div`
     display: flex;
@@ -34,15 +44,5 @@ export const Container = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-
-        h3 {
-            margin: 0;
-            font-size: 40px;
-            
-        }
-
-        button {
-            margin-right: 10px;
-        }
     }
 `;
