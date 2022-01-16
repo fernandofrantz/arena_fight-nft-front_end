@@ -25,7 +25,7 @@ export const StyledLanding = styled.div`
   align-items: center;
 
   .fightToEarn {
-    width: 80%;
+    width: 90%;
   }
 
   .firstBg {
@@ -36,7 +36,7 @@ export const StyledLanding = styled.div`
   }
 
   .preSale {
-    width: 60%;
+    width: 70%;
   }
 
   .menuExternal {
@@ -153,14 +153,8 @@ export const LogoAndButtons = styled.div`
   align-items: center;
   justify-content: space-evenly;
 
-  .preSale,
-  .connectWallet {
-    width: 25%;
-    margin-top: 10%;
-  }
-
   .logo {
-    width: 33%;
+    width: 40%;
   }
 
   @media screen and (min-width: 768px) {
@@ -272,21 +266,23 @@ export const BoxFighter = styled.div``;
 export const FigthersBox = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   background-image: url(${box});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 130px;
+
+  width:80%;
+  height: 150px;
 
   margin: 40px 0px 0px 0px;
 
   .boxRandomFighters {
     .randomFighters {
       .fighters {
-        width: 20%;
+        width: 25%;
       }
     }
     .txtfighters {
@@ -298,25 +294,25 @@ export const FigthersBox = styled.div`
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 18%;
+          width: 21%;
         }
       }
       .txtfighters {
-        width: 50%;
+        width: 55%;
       }
     }
   }
 
   @media screen and (min-width: 425px) {
-    height: 150px;
+    height: 180px;
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 18%;
+          width: 22%;
         }
       }
       .txtfighters {
-        width: 50%;
+        width: 60%;
       }
     }
   }
@@ -397,7 +393,7 @@ export const Platforms = styled.div`
   margin: 40px 0px 0px 0px;
 
   .tokenCodeComming {
-    width: 75%;
+    width: 85%;
   }
 
   @media screen and (min-width: 768px) {
@@ -421,11 +417,11 @@ export const Platforms = styled.div`
 
 export const TravelingPlaces = styled.div`
   width: 70%;
-  margin: 50px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
 
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: bottom;
   justify-content: center;
 
   img {
@@ -460,6 +456,12 @@ export const RoadMap = styled.div`
   img {
     width: 80%;
   }
+
+  @media screen and (min-width: 425px) {
+    img {
+      width: 85%;
+    }
+  }
 `;
 
 export const TokenAllocation = styled.div`
@@ -469,6 +471,12 @@ export const TokenAllocation = styled.div`
 
   .tokenAllocation {
     width: 60%;
+  }
+
+  @media screen and (min-width: 425px) {
+    .tokenAllocation {
+      width: 65%;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -515,6 +523,14 @@ export const MeetTheTeam = styled.div`
 
     .personCard {
       width: 30%;
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    div {
+      .personCard {
+        width: 35%;
+      }
     }
   }
 

@@ -47,7 +47,6 @@ import {
   TokenAllocation,
   TravelingPlaces,
   Bg1,
-  BoxFighter,
 } from "./styles";
 
 import { HeaderLanding } from "../../components/HeaderLanding";
