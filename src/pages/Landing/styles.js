@@ -23,6 +23,7 @@ export const StyledLanding = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .fightToEarn {
     width: 80%;
   }
@@ -34,9 +35,17 @@ export const StyledLanding = styled.div`
     align-items: center;
   }
 
+  .preSale {
+    width: 30%;
+  }
+
   @media screen and (min-width: 768px) {
     .fightToEarn {
       width: 70%;
+    }
+
+    .preSale {
+      width: 35%;
     }
   }
 
@@ -50,10 +59,6 @@ export const StyledLanding = styled.div`
     .fightToEarn {
       width: 40%;
     }
-  }
-
-  .preSale {
-    width: 150px;
   }
 `;
 
@@ -184,55 +189,115 @@ export const BoxFighter = styled.div``;
 
 export const FigthersBox = styled.div`
   display: flex;
-  align-items: center;
   flex-direction: column;
+  background-image: url(${box});
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
   justify-content: center;
+  width: 80%;
+  height: 130px;
 
-  margin-top: 30px;
+  margin: 40px 0px 0px 0px;
 
   .boxRandomFighters {
-    background-image: url(${box});
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 70%;
-    padding: 20px 0px 10px 0px;
-
+    .randomFighters {
+      .fighters {
+        width: 20%;
+      }
+    }
     .txtfighters {
-      width: 70%;
+      width: 60%;
     }
   }
 
-  .randomFighters {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    .fighters {
-      width: 25%;
+  @media screen and (min-width: 375px) {
+    .boxRandomFighters {
+      .randomFighters {
+        .fighters {
+          width: 18%;
+        }
+      }
+      .txtfighters {
+        width: 50%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    height: 150px;
+    .boxRandomFighters {
+      .randomFighters {
+        .fighters {
+          width: 18%;
+        }
+      }
+      .txtfighters {
+        width: 50%;
+      }
     }
   }
 
   @media screen and (min-width: 768px) {
-    width: 80%;
+    height: 260px;
+    .boxRandomFighters {
+      .randomFighters {
+        .fighters {
+          width: 18%;
+        }
+      }
+      .txtfighters {
+        width: 50%;
+      }
+    }
   }
 
   @media screen and (min-width: 1024px) {
-    width: 80%;
-    height: 100vh;
-
+    height: 260px;
     .boxRandomFighters {
-      width: 85%;
+      .randomFighters {
+        .fighters {
+          width: 13%;
+        }
+      }
+      .txtfighters {
+        width: 40%;
+      }
     }
   }
 
   @media screen and (min-width: 1440px) {
-    width: 65%;
+    height: 350px;
+    .boxRandomFighters {
+      .randomFighters {
+        .fighters {
+          width: 12%;
+        }
+      }
+      .txtfighters {
+        width: 40%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    height: 550px;
+    .boxRandomFighters {
+      .randomFighters {
+        .fighters {
+          width: 11%;
+        }
+      }
+      .txtfighters {
+        width: 35%;
+      }
+    }
   }
 `;
 
 export const Platforms = styled.div`
-  width: 90%;
+  width: 70%;
   margin: 40px 0px 0px 0px;
 
   .tokenCodeComming {
@@ -246,7 +311,7 @@ export const Platforms = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 80%;
+    width: 60%;
   }
 
   @media screen and (min-width: 1440px) {
@@ -254,12 +319,12 @@ export const Platforms = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
-    width: 55%;
+    width: 45%;
   }
 `;
 
 export const TravelingPlaces = styled.div`
-  width: 90%;
+  width: 70%;
   margin: 50px 0px 0px 0px;
 
   display: flex;
@@ -324,7 +389,7 @@ export const RoadMap = styled.div`
       align-items: center;
       justify-content: space-around;
 
-      width: 45%;
+      width: 70%;
     }
 
     .txt {
@@ -339,17 +404,26 @@ export const RoadMap = styled.div`
     }
 
     .cardsRoad {
-      width: 40%;
+      width: 60%;
     }
   }
 
   @media screen and (min-width: 1440px) {
+    .txt {
+      width: 20%;
+    }
     .cardsRoad {
-      width: 35%;
+      width: 50%;
     }
   }
 
   @media screen and (min-width: 2560px) {
+    .txt {
+      width: 15%;
+    }
+    .cardsRoad {
+      width: 55%;
+    }
   }
 `;
 
@@ -364,7 +438,7 @@ export const TokenAllocation = styled.div`
 
   @media screen and (min-width: 768px) {
     .tokenAllocation {
-      width: 60%;
+      width: 50%;
     }
   }
 
@@ -381,11 +455,14 @@ export const TokenAllocation = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
+    .tokenAllocation {
+      width: 30%;
+    }
   }
 `;
 
 export const MeetTheTeam = styled.div`
-  width: 90%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -408,12 +485,13 @@ export const MeetTheTeam = styled.div`
 
   @media screen and (min-width: 768px) {
     .meetTheTeam {
-      width: 70%;
+      width: 50%;
       margin-bottom: 20px;
     }
-
-    .personCard {
-      width: 60%;
+    div {
+      .personCard {
+        width: 25%;
+      }
     }
   }
 
@@ -427,7 +505,7 @@ export const MeetTheTeam = styled.div`
     }
 
     .meetTheTeam {
-      width: 50%;
+      width: 45%;
     }
 
     .personCard {
@@ -446,11 +524,18 @@ export const MeetTheTeam = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
+    .meetTheTeam {
+      width: 35%;
+    }
+
+    .personCard {
+      width: 15%;
+    }
   }
 `;
 
 export const Partners = styled.div`
-  width: 90%;
+  width: 50%;
 
   display: flex;
   flex-direction: column;
@@ -469,11 +554,11 @@ export const Partners = styled.div`
 
   @media screen and (min-width: 768px) {
     .partners {
-      width: 80%;
+      width: 70%;
     }
 
     .partnersTxt {
-      width: 45%;
+      width: 35%;
       margin: 0px 0px 10px 0px;
     }
   }
@@ -483,7 +568,7 @@ export const Partners = styled.div`
       width: 30%;
     }
     .partners {
-      width: 70%;
+      width: 60%;
     }
   }
 
