@@ -168,9 +168,7 @@ export const Landing = () => {
             <img src={tralveTwo} alt=""></img>
           </TravelingPlaces>
           <RoadMap>
-            <div className="cardsRoad">
               <img className="road" src={roadMapOne} alt=""></img>
-            </div>
           </RoadMap>
           <TokenAllocation>
             <img src={tokenAllocation} alt="" className="tokenAllocation"></img>

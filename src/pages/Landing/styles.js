@@ -36,7 +36,7 @@ export const StyledLanding = styled.div`
   }
 
   .preSale {
-    width: 30%;
+    width: 60%;
   }
 
   .menuExternal {
@@ -397,7 +397,7 @@ export const Platforms = styled.div`
   margin: 40px 0px 0px 0px;
 
   .tokenCodeComming {
-    width: 85%;
+    width: 75%;
   }
 
   @media screen and (min-width: 768px) {
@@ -424,11 +424,12 @@ export const TravelingPlaces = styled.div`
   margin: 50px 0px 0px 0px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 
   img {
-    width: 90%;
+    width: 35%;
   }
 
   @media screen and (min-width: 768px) {
@@ -456,70 +457,8 @@ export const RoadMap = styled.div`
   flex-direction: column;
   align-items: center;
 
-  .txt {
-    width: 40%;
-    margin: 20px 0px 20px 0px;
-  }
-
-  .road {
-    width: 65%;
-    margin: 10px;
-  }
-
-  .cardsRoad {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    width: 100%;
-
-    img {
-      width: 25%;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .cardsRoad {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-
-      width: 70%;
-    }
-
-    .txt {
-      width: 30%;
-      margin: 50px 0px 0px 0px;
-    }
-  }
-
-  @media screen and (min-width: 1024px) {
-    .txt {
-      width: 25%;
-    }
-
-    .cardsRoad {
-      width: 60%;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    .txt {
-      width: 20%;
-    }
-    .cardsRoad {
-      width: 50%;
-    }
-  }
-
-  @media screen and (min-width: 2560px) {
-    .txt {
-      width: 15%;
-    }
-    .cardsRoad {
-      width: 55%;
-    }
+  img {
+    width: 80%;
   }
 `;
 
@@ -529,7 +468,7 @@ export const TokenAllocation = styled.div`
   margin: 30px 0px 20px 0px;
 
   .tokenAllocation {
-    width: 90%;
+    width: 60%;
   }
 
   @media screen and (min-width: 768px) {
