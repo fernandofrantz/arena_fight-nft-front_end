@@ -26,7 +26,7 @@ import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
 
 import { CardPreSale } from "../../components/CardPreSale";
-import { PreSalePage, SectionNfts, StyledBar, Bgpresale } from "./styles";
+import { Bgpresale, PreSalePage, SectionNfts, StyledBar, } from "./styles";
 import { SocialButtons } from "../../components/SocialButtons";
 
 import { useNavigate } from "react-router-dom";
