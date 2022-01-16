@@ -39,6 +39,90 @@ export const StyledLanding = styled.div`
     width: 30%;
   }
 
+  .menuExternal {
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+
+
+    .menu {
+      width: 40px;
+      height: 40px;
+      background-color: black;
+
+      border-radius: 50px;
+
+      z-index: 1;
+
+      margin: 10px 10px 0px 0px ;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .bar {
+        width: 60%;
+        height: 2px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+
+        margin: 0px 0px 5px 0px;
+      }
+    }
+  }
+
+
+
+  .header {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 1000ms;
+
+    div {
+      transition: 1000ms;
+      width: 60%;
+      height: 100%;
+      float: right;
+      background-color: lightblue;
+      
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .white {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 80%;
+        height: 50px;
+      }
+
+      .play {
+        width: 50%;
+      }
+
+      .backButton {
+        width: 30%;
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+
+
   @media screen and (min-width: 768px) {
     .fightToEarn {
       width: 70%;
@@ -68,8 +152,6 @@ export const LogoAndButtons = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
-  padding-top: 16%;
 
   .preSale,
   .connectWallet {
@@ -239,6 +321,20 @@ export const FigthersBox = styled.div`
     }
   }
 
+  @media screen and (min-width: 480px) {
+    height: 150px;
+    .boxRandomFighters {
+      .randomFighters {
+        .fighters {
+          width: 20%;
+        }
+      }
+      .txtfighters {
+        width: 50%;
+      }
+    }
+  }
+
   @media screen and (min-width: 768px) {
     height: 260px;
     .boxRandomFighters {
@@ -311,11 +407,11 @@ export const Platforms = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 60%;
+    width: 45%;
   }
 
   @media screen and (min-width: 1440px) {
-    width: 75%;
+    width: 55%;
   }
 
   @media screen and (min-width: 2560px) {
@@ -450,7 +546,7 @@ export const TokenAllocation = styled.div`
 
   @media screen and (min-width: 1440px) {
     .tokenAllocation {
-      width: 40%;
+      width: 35%;
     }
   }
 
@@ -462,7 +558,7 @@ export const TokenAllocation = styled.div`
 `;
 
 export const MeetTheTeam = styled.div`
-  width: 55%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -502,40 +598,44 @@ export const MeetTheTeam = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      .personCard {
+        width: 25%;
+      }
     }
 
-    .meetTheTeam {
-      width: 45%;
-    }
-
-    .personCard {
-      width: 30%;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    .meetTheTeam {
-      width: 45%;
-    }
-
-    .personCard {
-      width: 25%;
-    }
-  }
-
-  @media screen and (min-width: 2560px) {
     .meetTheTeam {
       width: 35%;
     }
 
+  }
+
+  @media screen and (min-width: 1440px) {
+    .meetTheTeam {
+      width: 35%;
+    }
+    div {
     .personCard {
-      width: 15%;
+      width: 25%;
+    }
+  }
+  }
+
+  @media screen and (min-width: 2560px) {
+    .meetTheTeam {
+      width: 30%;
+    }
+
+    div {
+
+      .personCard {
+        width: 20%;
+      }
     }
   }
 `;
 
 export const Partners = styled.div`
-  width: 50%;
+  width: 80%;
 
   display: flex;
   flex-direction: column;
@@ -565,7 +665,7 @@ export const Partners = styled.div`
 
   @media screen and (min-width: 1024px) {
     .partnersTxt {
-      width: 30%;
+      width: 25%;
     }
     .partners {
       width: 60%;
@@ -574,7 +674,7 @@ export const Partners = styled.div`
 
   @media screen and (min-width: 1440px) {
     .partners {
-      width: 70%;
+      width: 60%;
     }
 
     .partnersTxt {
@@ -584,5 +684,13 @@ export const Partners = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
+    .partners {
+      width: 50%;
+    }
+
+    .partnersTxt {
+      width: 30%;
+      margin: 0px 0px 10px 0px;
+    }
   }
 `;

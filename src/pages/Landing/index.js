@@ -18,10 +18,7 @@ import tralveOne from "../../assets/images/travelOne.png";
 import tralveTwo from "../../assets/images/travelTwo.png";
 import tralveThree from "../../assets/images/travelThree.png";
 
-import roadMapTxt from "../../assets/images/roadMapTxt.png";
 import roadMapOne from "../../assets/images/roadMapOne.png";
-import roadMapTwo from "../../assets/images/roadMapTwo.png";
-import roadMapThree from "../../assets/images/roadMapThree.png";
 
 import meetTheTeamImg from "../../assets/images/meetTheTeam.png";
 import higor from "../../assets/images/meetTheTeamHigor.png";
@@ -35,6 +32,8 @@ import partners from "../../assets/images/partners.png";
 import partnersTxt from "../../assets/images/partnersTxt.png";
 
 import { SocialButtons } from "../../components/SocialButtons";
+
+import BackButton from "../../assets/images/Buttons/BackButton.png";
 
 import {
   ButtonsBar,
@@ -54,6 +53,7 @@ import {
 import { HeaderLanding } from "../../components/HeaderLanding";
 
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export const Landing = () => {
   const navigate = useNavigate();
@@ -85,11 +85,37 @@ export const Landing = () => {
   };
   sortThreeDifferentFighters();
 
+  const [buttonsApearing, setButtonsApearing] = useState(false)
+
+
   return (
     <>
-      <HeaderLanding />
       <StyledLanding>
         <Bg1>
+        {
+          !buttonsApearing &&
+        <div className="menuExternal">
+          <div onClick={() => setButtonsApearing(true)} className="menu">
+            <div onClick={() => setButtonsApearing(true)} className="bar"></div>
+            <div onClick={() => setButtonsApearing(true)} className="bar"></div>
+            <div onClick={() => setButtonsApearing(true)} className="bar"></div>
+          </div>
+        </div>
+        }
+        {
+        buttonsApearing &&
+        <div className="header">
+          <div>
+            <img className="play" onClick={() => sendTo('/play')} src={playNow} alt=""></img>
+            <div className="white">
+              <button>contract</button>
+              <img className="whitepaper" src={whitepaper} alt=''></img>
+            </div>
+            <img className="backButton" onClick={() => setButtonsApearing(false)} src={BackButton} alt=""></img>
+          </div>
+        </div>
+        }
+          
           <div className="firstBg">
             <LogoAndButtons>
               <img className="logo" src={logo} alt=""></img>
@@ -142,11 +168,8 @@ export const Landing = () => {
             <img src={tralveTwo} alt=""></img>
           </TravelingPlaces>
           <RoadMap>
-            <img className="txt" src={roadMapTxt} alt=""></img>
             <div className="cardsRoad">
               <img className="road" src={roadMapOne} alt=""></img>
-              <img className="road" src={roadMapTwo} alt=""></img>
-              <img className="road" src={roadMapThree} alt=""></img>
             </div>
           </RoadMap>
           <TokenAllocation>
