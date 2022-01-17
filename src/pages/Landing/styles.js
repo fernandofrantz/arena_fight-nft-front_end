@@ -17,6 +17,7 @@ export const Bg1 = styled.div`
 `;
 
 export const StyledLanding = styled.div`
+  max-width: 100vw;
   width: 100vw;
   height: 100%;
   min-height: 100vh;
@@ -141,14 +142,14 @@ export const StyledLanding = styled.div`
 `;
 
 export const LogoAndButtons = styled.div`
-  width: 130%;
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
   .logo {
-    width: 55%;
+    width: 70%;
   }
 
   @media screen and (min-width: 768px) {

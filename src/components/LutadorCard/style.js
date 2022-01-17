@@ -102,7 +102,7 @@ export const Xp = styled.img`
 `;
 
 export const Thirst = styled.img`
-    position: absolute;
+    position: relative;
     width: 65px;
     z-index: 9;
     right: 90px;

@@ -48,7 +48,7 @@ import {
   TravelingPlaces,
   Bg1,
 } from "./styles";
-
+import Navbar from '../../components/Nav/Nav/Navbar';
 import { HeaderLanding } from "../../components/HeaderLanding";
 
 import { useNavigate } from "react-router-dom";
@@ -91,16 +91,7 @@ export const Landing = () => {
     <>
       <StyledLanding>
         <Bg1>
-        {
-          !buttonsApearing &&
-        <div className="menuExternal">
-          <div onClick={() => setButtonsApearing(true)} className="menu">
-            <div onClick={() => setButtonsApearing(true)} className="bar"></div>
-            <div onClick={() => setButtonsApearing(true)} className="bar"></div>
-            <div onClick={() => setButtonsApearing(true)} className="bar"></div>
-          </div>
-        </div>
-        }
+        <Navbar/>
         {
         buttonsApearing &&
         <div className="header">
