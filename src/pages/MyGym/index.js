@@ -1,7 +1,13 @@
+import { ProductList } from '../../components/Products/index';
+import { Container } from './styles';
+import { Header } from '../../components/Header';
+
 export const MyGym = () => {
-  return (
-    <div>
-      <h1>MyGymPage</h1>
-    </div>
-  );
-};
+
+    return (
+        <Container>
+            <Header />
+            <ProductList />
+        </Container>
+    )
+}
