@@ -135,13 +135,13 @@ export const StyledLanding = styled.div`
 
   @media screen and (min-width: 2560px) {
     .fightToEarn {
-      width: 40%;
+      width: 70%;
     }
   }
 `;
 
 export const LogoAndButtons = styled.div`
-  width: 100%;
+  width: 130%;
 
   display: flex;
   align-items: center;
@@ -165,7 +165,7 @@ export const LogoAndButtons = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 70%;
+    width: 100%;
   }
 
   @media screen and (min-width: 2560px) {
@@ -242,9 +242,12 @@ export const ButtonsBar = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
-    height: 180px;
-    .fightToEarn {
-      width: 100%;
+    height: 200px;
+    div {
+      width: 90%;
+      .fightToEarn {
+        width: 250%;
+      }
     }
   }
 `;
