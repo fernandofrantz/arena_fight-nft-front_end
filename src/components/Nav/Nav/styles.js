@@ -6,10 +6,15 @@ height: 55px;
 padding: 0 20px;
 display: flex;
 justify-content: space-between;
+background-color: #5AB5D700;
 .logo {
-    width: 25%;
-    @media (min-width: 768px) {
+    width: 0%;
+    @media (min-width: 769px) {
         width: 5%;
     }
+    
+}
+@media (min-width: 769px) {
+    background-color: #5ab5d7;
 }
 `
