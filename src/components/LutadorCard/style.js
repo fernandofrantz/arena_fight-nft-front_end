@@ -8,20 +8,23 @@ export const Container = styled.div`
   background-color: Transparent;
   background-size: cover;
   background-position-x: center;
-  width: 90%;
+  width: 288px;
   min-width: 300px;
-  min-height: 200px;
+  min-height: 210px;
   margin: 0 auto;
 
   @media screen and (min-width: 375px) {
     min-height: 230px;
+    width: 330px;
   }
   @media screen and (min-width: 425px) {
     min-height: 270px;
+    width: 382.5px;
+    height: 270px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 60%;
+    width: 460px;
     min-height: 320px;
     max-height: 350px;
   }
@@ -31,6 +34,7 @@ export const Container = styled.div`
   }
   @media screen and (min-width: 1920px) {
     min-height: 450px;
+    min-width: 600px;
   }
   @media screen and (min-width: 2560px) {
   }
@@ -39,7 +43,7 @@ export const Container = styled.div`
 export const Lutador = styled.img`
   position: absolute;
   left: 0;
-  top: 6%;
+  top: 10px;
   width: 140px;
   @media screen and (min-width: 375px) {
     width: 160px;
@@ -52,33 +56,35 @@ export const Lutador = styled.img`
   }
   @media screen and (min-width: 1024px) {
     width: 230px;
-    left: 90px;
+    left: 0px;
   }
   @media screen and (min-width: 1440px) {
     width: 230px;
-    left: 200px;
+    left: 00px;
   }
   @media screen and (min-width: 1920px) {
-    width: 350px;
-    left: 250px;
+    width: 330px;
+    left: 0px;
   }
   @media screen and (min-width: 2560px) {
-    left: 440px;
+    width: 300px;
+    left: 0px;
   }
 `;
 
 export const Xp = styled.img`
   position: absolute;
-  width: 150px;
+  width: 140px;
   z-index: 9;
-  right: 15px;
-  top: 58px;
+  right: 20px;
+  top: 70px;
   @media screen and (min-width: 375px) {
     width: 160px;
   }
   @media screen and (min-width: 425px) {
-    width: 200px;
-    top: 90px;
+    width: 180px;
+    right: 30px;
+    top: 100px;
   }
   @media screen and (min-width: 768px) {
     width: 200px;
@@ -86,20 +92,21 @@ export const Xp = styled.img`
     right: 50px;
   }
   @media screen and (min-width: 1024px) {
-    right: 110px;
+    right: 40px;
   }
   @media screen and (min-width: 1440px) {
     width: 180px;
-    right: 260px;
+    right: 50px;
     top: 110px;
   }
   @media screen and (min-width: 1920px) {
-    right: 290px;
-    width: 280px;
+    right: 40px;
+    width: 250px;
+    height: 60px;
     top: 180px;
   }
   @media screen and (min-width: 2560px) {
-    right: 480px;
+    right: 40px;
     width: 280px;
     top: 180px;
   }
@@ -112,9 +119,11 @@ export const Thirst = styled.img`
   bottom: 35px;
   @media screen and (min-width: 375px) {
     width: 75px;
+    right: 100px;
   }
   @media screen and (min-width: 425px) {
-    width: 90px;
+    width: 80px;
+    bottom: 40px;
     right: 115px;
   }
   @media screen and (min-width: 768px) {
@@ -123,19 +132,20 @@ export const Thirst = styled.img`
     bottom: 60px;
   }
   @media screen and (min-width: 1024px) {
-    right: 230px;
+    right: 150px;
   }
   @media screen and (min-width: 1440px) {
     width: 90px;
-    right: 350px;
+    right: 150px;
     bottom: 65px;
   }
   @media screen and (min-width: 1920px) {
     width: 120px;
-    right: 39%;
+    right: 40px;
+    bottom: 80px;
   }
   @media screen and (min-width: 2560px) {
-    right: 42%;
+    right: 200px;
   }
 `;
 
@@ -149,7 +159,8 @@ export const Hunger = styled.img`
     width: 65px;
   }
   @media screen and (min-width: 425px) {
-    width: 85px;
+    width: 70px;
+    bottom: 40px;
   }
   @media screen and (min-width: 768px) {
     width: 75px;
@@ -157,19 +168,20 @@ export const Hunger = styled.img`
     bottom: 60px;
   }
   @media screen and (min-width: 1024px) {
-    right: 135px;
+    right: 60px;
   }
   @media screen and (min-width: 1440px) {
     width: 80px;
-    right: 255px;
+    right: 50px;
     bottom: 65px;
   }
   @media screen and (min-width: 1920px) {
     width: 105px;
-    right: 27%;
+    bottom: 80px;
+    right: 180px;
   }
   @media screen and (min-width: 2560px) {
-    right: 33%;
+    right: 80px;
   }
 `;
 
@@ -202,7 +214,7 @@ export const Lvl = styled.img`
   @media screen and (min-width: 375px) {
   }
   @media screen and (min-width: 425px) {
-    width: 86px;
+    width: 75px;
   }
   @media screen and (min-width: 768px) {
     width: 90px;
@@ -211,36 +223,38 @@ export const Lvl = styled.img`
   @media screen and (min-width: 1024px) {
     width: 90px;
     top: -50px;
-    right: 50px;
+    right: -30px;
   }
   @media screen and (min-width: 1440px) {
-    width: 110px;
-    right: 160px;
+    width: 100px;
+    right: -30px;
   }
   @media screen and (min-width: 1920px) {
-    width: 150px;
-    right: 220px;
+    width: 120px;
+    right: -40px;
   }
   @media screen and (min-width: 2560px) {
-    right: 380px;
+    right: -30px;
   }
 `;
 
 export const Str = styled.img`
   position: absolute;
-  width: 120px;
-  height: 35px;
+  width: 100px;
+  height: 30px;
   z-index: 9;
-  right: 45px;
-  top: 15px;
+  right: 60px;
+  top: 25px;
   @media screen and (min-width: 375px) {
-    width: 130px;
+    right: 70px;
+    width: 110px;
+    height: 35px;
   }
   @media screen and (min-width: 425px) {
-    width: 140px;
-    height: 50px;
-    right: 75px;
-    top: 22px;
+    width: 130px;
+    height: 40px;
+    right: 80px;
+    top: 45px;
   }
   @media screen and (min-width: 768px) {
     width: 150px;
@@ -249,22 +263,22 @@ export const Str = styled.img`
     top: 45px;
   }
   @media screen and (min-width: 1024px) {
-    right: 160px;
+    right: 90px;
   }
   @media screen and (min-width: 1440px) {
     width: 150px;
     height: 45px;
-    right: 290px;
+    right: 80px;
   }
 
   @media screen and (min-width: 1920px) {
     width: 180px;
     height: 60px;
     top: 100px;
-    right: 390px;
+    right: 110px;
   }
   @media screen and (min-width: 2560px) {
-    right: 580px;
+    right: 140px;
   }
 `;
 
@@ -286,15 +300,17 @@ export const Button = styled.button`
   }
   @media screen and (min-width: 768px) {
     bottom: -4px;
-    left: 34%;
+    left: 140px;
   }
   @media screen and (min-width: 1024px) {
-    left: 40%;
+    left: 145px;
   }
   @media screen and (min-width: 1440px) {
+    left: 120px;
     bottom: -10px;
   }
   @media screen and (min-width: 1920px) {
-    left: 43%;
+    left: 200px;
+    bottom: 0px;
   }
 `;
