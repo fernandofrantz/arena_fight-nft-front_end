@@ -13,6 +13,7 @@ export const HeaderGame = () => {
                     <p>My Gym</p>
                     <p>Mint Fighter</p>
                     <p>Play now</p>
+                    
                 </div>
             </StyledHeader>
         </>

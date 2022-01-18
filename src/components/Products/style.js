@@ -14,6 +14,9 @@ export const BoxList = styled.div`
     width: 1000px;
     justify-content: space-around;
     
+
+
+
     div {
         flex-basis: 250px;
         display: flex;
@@ -21,6 +24,16 @@ export const BoxList = styled.div`
         justify-content: space-between;
         align-items: center;
     }
+
+    @media screen and (min-width:2050px) {
+        max-height: 250px;
+
+        img {
+            max-height: 250px;
+        }
+    }
+
+
 `;
 
 export const ButtonE = styled.button`

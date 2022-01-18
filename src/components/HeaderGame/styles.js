@@ -21,6 +21,9 @@ export const StyledHeader = styled.header`
             font-size: 130%;
             margin: 10px;
         }
+        p:hover {
+            cursor: pointer
+        }
 
     }
 

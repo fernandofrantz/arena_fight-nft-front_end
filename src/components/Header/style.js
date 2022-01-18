@@ -28,6 +28,7 @@ export const Container = styled.header`
     display: flex;
     justify-content: center;
     text-shadow: 1px 3px 5px rgba(200,200,200,0.98);
+    margin-top: 60px;
 
     div {
         margin: 15px;

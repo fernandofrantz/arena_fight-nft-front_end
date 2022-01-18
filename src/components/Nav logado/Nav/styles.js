@@ -27,6 +27,9 @@ p{
     @media (min-width: 1440px){
         width: 3vw;
     }
+    @media screen and (min-width: 1920px) {
+        width: 2vw;
+    }
 }
 @media (min-width: 769px) {
     background-color: #5ab5d7;

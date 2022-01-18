@@ -37,9 +37,9 @@ export const PlayNow = () => {
       <Bgplay>
         <Navbar />
         <StyledPlay>
-          <div className="BackDiv">
+          {/*<div className="BackDiv">
             <img onClick={() => sendTo("/")} src={BackButton} alt="" />
-          </div>
+          </div>*/}
           <MainBar>
             <div className="aft">
               <img className="aftArea" src={aftArea} alt="" />
@@ -50,14 +50,14 @@ export const PlayNow = () => {
                 alt=""
               />
             </div>
-            <div>
+            {/*<div>
               <img
                 onClick={() => sendTo("/")}
                 className="logo"
                 src={Logo}
                 alt=""
               />
-            </div>
+            </div>*/}
             <div>
               <img className="mintFighter" src={MintFighter} alt="" />
             </div>

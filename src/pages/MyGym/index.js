@@ -6,7 +6,7 @@ import  Navbar  from "../../components/Nav logado/Nav/Navbar"
 export const MyGym = () => {
   return (
     <Container>
-        <Navbar/>
+      <Navbar/>
       <Header />
       <ProductList />
     </Container>

@@ -16,9 +16,6 @@ export const Header = () => {
         <Container>
 
         <DivTop>
-            <button onClick={() => handleClick('/')}>
-            <DivLogo src={logo}/>
-            </button>
             <DivTitle src={mygym}/>  
             <IconFighter src={iconfighters}/>
          </DivTop>
