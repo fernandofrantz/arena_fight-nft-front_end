@@ -45,7 +45,6 @@ export const StyledLanding = styled.div`
     display: flex;
     justify-content: flex-end;
 
-
     .menu {
       width: 40px;
       height: 40px;
@@ -55,7 +54,7 @@ export const StyledLanding = styled.div`
 
       z-index: 1;
 
-      margin: 10px 10px 0px 0px ;
+      margin: 10px 10px 0px 0px;
 
       display: flex;
       flex-direction: column;
@@ -73,8 +72,6 @@ export const StyledLanding = styled.div`
     }
   }
 
-
-
   .header {
     width: 100vw;
     height: 100%;
@@ -91,7 +88,6 @@ export const StyledLanding = styled.div`
       height: 100%;
       float: right;
       background-color: lightblue;
-      
 
       display: flex;
       flex-direction: column;
@@ -121,8 +117,6 @@ export const StyledLanding = styled.div`
     }
   }
 
-
-
   @media screen and (min-width: 768px) {
     .fightToEarn {
       width: 70%;
@@ -141,20 +135,20 @@ export const StyledLanding = styled.div`
 
   @media screen and (min-width: 2560px) {
     .fightToEarn {
-      width: 40%;
+      width: 70%;
     }
   }
 `;
 
 export const LogoAndButtons = styled.div`
-  width: 100%;
+  width: 130%;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
   .logo {
-    width: 40%;
+    width: 55%;
   }
 
   @media screen and (min-width: 768px) {
@@ -171,7 +165,7 @@ export const LogoAndButtons = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 70%;
+    width: 100%;
   }
 
   @media screen and (min-width: 2560px) {
@@ -248,9 +242,12 @@ export const ButtonsBar = styled.div`
   }
 
   @media screen and (min-width: 2560px) {
-    height: 180px;
-    .fightToEarn {
-      width: 100%;
+    height: 200px;
+    div {
+      width: 90%;
+      .fightToEarn {
+        width: 250%;
+      }
     }
   }
 `;
@@ -268,17 +265,17 @@ export const FigthersBox = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 
-  width:80%;
+  width: 80%;
   height: 150px;
 
   margin: 40px 0px 0px 0px;
 
   .boxRandomFighters {
     .randomFighters {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       .fighters {
         width: 25%;
       }
@@ -344,39 +341,39 @@ export const FigthersBox = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    height: 220px;
+    height: 250px;
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 20%;
+          width: 24%;
         }
       }
       .txtfighters {
-        width: 50%;
+        width: 60%;
       }
     }
   }
 
   @media screen and (min-width: 1440px) {
-    height: 250px;
+    height: 380px;
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 22%;
+          width: 35%;
         }
       }
       .txtfighters {
-        width: 50%;
+        width: 85%;
       }
     }
   }
 
   @media screen and (min-width: 2560px) {
-    height: 400px;
+    height: 480px;
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 44%;
+          width: 200px;
         }
       }
       .txtfighters {
@@ -449,7 +446,7 @@ export const TravelingPlaces = styled.div`
 `;
 
 export const RoadMap = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -530,7 +527,7 @@ export const TokenAllocation = styled.div`
 `;
 
 export const MeetTheTeam = styled.div`
-  width: 75%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -586,7 +583,6 @@ export const MeetTheTeam = styled.div`
     .meetTheTeam {
       width: 35%;
     }
-
   }
 
   @media screen and (min-width: 1440px) {
@@ -594,10 +590,10 @@ export const MeetTheTeam = styled.div`
       width: 35%;
     }
     div {
-    .personCard {
-      width: 25%;
+      .personCard {
+        width: 25%;
+      }
     }
-  }
   }
 
   @media screen and (min-width: 2560px) {
@@ -606,7 +602,6 @@ export const MeetTheTeam = styled.div`
     }
 
     div {
-
       .personCard {
         width: 20%;
       }
