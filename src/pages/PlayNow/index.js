@@ -1,5 +1,6 @@
 import { HeaderGame } from "../../components/HeaderGame";
 import { SocialButtons } from "../../components/SocialButtons";
+import Navbar from '../../components/Nav logado/Nav/Navbar';
 import { CountryFights, MainBar, StyledPlay, Bgplay } from "./styles";
 
 import Logo from "../../assets/images/Logo.png";
@@ -34,7 +35,7 @@ export const PlayNow = () => {
   return (
     <>
       <Bgplay>
-        <HeaderGame />
+        <Navbar/>
         <StyledPlay>
           <div className="BackDiv">
             <img onClick={() => sendTo("/")} src={BackButton} alt="" />
