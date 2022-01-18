@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="menu">
         <img className="logo" src={logo} alt="" />
         <p onClick={() => sendTo("/")}>Home</p>
-        <p onClick={() => sendTo("/lutador")}>Fighters</p>
+        <p onClick={() => sendTo("/play")}>Play Now</p>
         <p onClick={() => sendTo("/my-gym")}>My Gym</p>
       </div>
       <Burger />

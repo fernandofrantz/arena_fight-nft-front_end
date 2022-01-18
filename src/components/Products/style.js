@@ -18,6 +18,7 @@ export const BoxList = styled.div`
   div {
     flex-basis: 250px;
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +29,33 @@ export const BoxList = styled.div`
   @media screen and (min-width: 2560px) {
     height: 9.5vw;
   }
+=======
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-around;
+    
+
+
+
+    div {
+        flex-basis: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and (min-width:2050px) {
+        max-height: 250px;
+
+        img {
+            max-height: 250px;
+        }
+    }
+
+
+>>>>>>> 524e2aebcb44b3a9743b9383ccf7036e50135b3f
 `;
 
 export const ButtonE = styled.button`

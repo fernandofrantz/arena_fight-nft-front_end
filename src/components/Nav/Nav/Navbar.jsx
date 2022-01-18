@@ -3,7 +3,7 @@ import { Nav } from "./styles";
 import Burger from "../Burger/Burger";
 import logo from "../../../assets/images/Logo.png";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <Nav>
       <Burger />

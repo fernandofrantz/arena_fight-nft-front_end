@@ -12,7 +12,7 @@ export const StyledPlay = styled.div`
   height: 100%;
   min-height: 100vh;
 
-  padding-top: 30px;
+  margin-top: 50px;
 
   display: flex;
   flex-direction: column;
@@ -20,7 +20,6 @@ export const StyledPlay = styled.div`
 
   .BackDiv {
     width: 100%;
-    margin-top: 25px;
     display: flex;
 
     img {
@@ -166,9 +165,16 @@ export const CountryFights = styled.div`
     width: 120px;
   }
 
-  @media screen and (min-width: 768px) {
-    .country {
-      width: 300px;
+    @media screen and (min-width:375px){
+      .country {
+            width: 140px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .country {
+            width: 300px;
+        }
     }
   }
 
@@ -177,6 +183,7 @@ export const CountryFights = styled.div`
     .country {
       width: 380px;
     }
+  }
 
     @media screen and (min-width: 2560px) {
       margin: 100px 0px 0px 0px;

@@ -22,6 +22,7 @@ import spain from "../../assets/images/Countrys/Spain.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
 
 import { useNavigate } from "react-router-dom";
+import Navbar2 from "../../components/Nav/Nav/Navbar";
 
 export const PlayNow = () => {
   const navigate = useNavigate();
@@ -37,6 +38,9 @@ export const PlayNow = () => {
       <Bgplay>
         <Navbar />
         <StyledPlay>
+          {/*<div className="BackDiv">
+            <img onClick={() => sendTo("/")} src={BackButton} alt="" />
+          </div>*/}
           <MainBar>
             <div className="aft">
               <img className="aftArea" src={aftArea} alt="" />
@@ -47,14 +51,14 @@ export const PlayNow = () => {
                 alt=""
               />
             </div>
-            {/* <div>
+            {/*<div>
               <img
                 onClick={() => sendTo("/")}
                 className="logo"
                 src={Logo}
                 alt=""
               />
-            </div> */}
+            </div>*/}
             <div>
               <img className="mintFighter" src={MintFighter} alt="" />
             </div>
