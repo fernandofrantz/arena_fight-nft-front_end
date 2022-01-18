@@ -9,7 +9,7 @@ const RightNav = ({ open }) => {
       <li>endereço metamask</li>
       <li className="desktopnav">home</li>
       <li className="desktopnav">lutadores</li>
-      <li className="desktopnav">My Gym</li>
+      <li className="desktopnav last">My Gym</li>
     </Ul>
   )
 }

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Linv = styled.li``;
+export const Linv = styled.li`
+
+`;
 
 export const Ul = styled.ul`
   list-style: none;
@@ -10,6 +12,9 @@ export const Ul = styled.ul`
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  li{
+    margin: 10px;
+  }
   img {
     width: 125px;
     margin-bottom: 1px;
@@ -19,6 +24,9 @@ export const Ul = styled.ul`
     margin: 1px;
     margin-bottom: 1px;
     margin-right: 15px;
+  }
+  .last{
+    margin-bottom: 25px;
   }
   @media (min-width: 769px) {
     .desktopnav {
