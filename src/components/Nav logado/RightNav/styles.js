@@ -32,7 +32,7 @@ export const Ul = styled.ul`
     transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
     top: 0;
     right: 0;
-    height: 36vh;
+    min-height: 40vh;
     width: 104vw;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;

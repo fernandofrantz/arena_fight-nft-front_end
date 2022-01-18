@@ -5,57 +5,44 @@ export const ContainerList = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  .divlutadores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 `;
 
 export const BoxList = styled.div`
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  width: 1000px;
+  margin-top: 60px;
   justify-content: space-around;
   height: 11vw;
-
+  width: 60px;
+  align-items: center;
+  flex-direction: column;
   div {
     flex-basis: 250px;
     display: flex;
-<<<<<<< HEAD
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
   @media screen and (min-width: 375px) {
+
     height: 10vw;
+  }
+  @media screen and (min-width:1000px) {
+    width: 60%;
+    flex-direction: row;
   }
   @media screen and (min-width: 2560px) {
     height: 9.5vw;
   }
-=======
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 1000px;
-    justify-content: space-around;
-    
-
-
-
-    div {
-        flex-basis: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    @media screen and (min-width:2050px) {
-        max-height: 250px;
-
-        img {
-            max-height: 250px;
-        }
-    }
-
-
->>>>>>> 524e2aebcb44b3a9743b9383ccf7036e50135b3f
 `;
 
 export const ButtonE = styled.button`
@@ -65,9 +52,16 @@ export const ButtonE = styled.button`
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  width: 13%;
+  width: 30%;
   height: 50%;
+  margin-top: 75px;
   :active {
+  }
+  @media screen and (min-width:768px){
+    width: 20%;
+  }
+  @media screen and (min-width:1000px){
+    width: 13%;
   }
 `;
 
@@ -85,7 +79,7 @@ export const Arroww = styled.img`
 `;
 
 export const SelectS = styled.select`
-  position: absolute;
-  top: 50%;
-  left: 70%;
+    margin-left: 70%;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 `;

@@ -23,6 +23,7 @@ export const ProductList = (filteredGroups) => {
                 <option value="1">EXP</option>
                 <option value="2">STR</option>
             </SelectS>
+            <div className="divlutadores">
             <ButtonE>
                 <Arroww src={arrow2} alt=""/>
             </ButtonE>
@@ -32,6 +33,7 @@ export const ProductList = (filteredGroups) => {
             <ButtonE>
                 <Arroww src={arrow} alt=""/>
             </ButtonE>
+            </div>
         </ContainerList>
     )
 }

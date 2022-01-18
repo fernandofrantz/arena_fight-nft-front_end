@@ -3,14 +3,15 @@ import fundo from "../../assets/Cardfighter.png";
 
 export const Container = styled.button`
   background: url(${fundo});
-  z-index: 9;
   border: none;
   background-color: Transparent;
-  background-size: contain;
+  background-size: cover;
   background-position-x: center;
+  height: fit-content;
+
   img {
-    height: 10vw;
     width: 100%;
+    height: fit-content;
     margin: 0px;
   }
   transition: all 200ms ease-in;
