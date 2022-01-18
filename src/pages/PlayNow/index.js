@@ -21,6 +21,7 @@ import spain from "../../assets/images/Countrys/Spain.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
 
 import { useNavigate } from "react-router-dom";
+import Navbar from "../../components/Nav/Nav/Navbar";
 
 export const PlayNow = () => {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ export const PlayNow = () => {
   return (
     <>
       <Bgplay>
-        <HeaderGame />
+        <Navbar />
         <StyledPlay>
           <div className="BackDiv">
             <img onClick={() => sendTo("/")} src={BackButton} alt="" />

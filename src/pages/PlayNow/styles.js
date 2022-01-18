@@ -165,6 +165,12 @@ export const CountryFights = styled.div`
         width: 120px;
     }
 
+    @media screen and (min-width:375px){
+      .country {
+            width: 140px;
+        }
+    }
+
     @media screen and (min-width: 768px) {
         .country {
             width: 300px;
