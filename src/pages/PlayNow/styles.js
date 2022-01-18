@@ -73,6 +73,7 @@ export const MainBar = styled.div`
 
   .mintFighter {
     width: 65px;
+    margin: 0px;
   }
 
   .claimButton,
@@ -154,34 +155,34 @@ export const MainBar = styled.div`
 `;
 
 export const CountryFights = styled.div`
-    width: 90%;
-    margin-top: 30px;
+  width: 90%;
+  margin-top: 30px;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
+  .country {
+    width: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
     .country {
-        width: 120px;
+      width: 300px;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        .country {
-            width: 300px;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        margin: 50px 0px 0px 0px;
+  @media screen and (min-width: 1024px) {
+    margin: 50px 0px 0px 0px;
     .country {
-        width: 380px;
+      width: 380px;
     }
 
     @media screen and (min-width: 2560px) {
-        margin: 100px 0px 0px 0px;
-    .country {
+      margin: 100px 0px 0px 0px;
+      .country {
         width: 550px;
+      }
     }
-}
-
+  }
 `;

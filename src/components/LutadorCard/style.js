@@ -13,30 +13,90 @@ export const Container = styled.div`
   min-height: 210px;
   margin: 0 auto;
 
+  .goBack {
+    position: absolute;
+    z-index: 9;
+    top: -20px;
+    right: 120px;
+    img {
+      width: 80px;
+    }
+  }
+
   @media screen and (min-width: 375px) {
     min-height: 230px;
     width: 330px;
+    .goBack {
+      right: 130px;
+    }
   }
   @media screen and (min-width: 425px) {
     min-height: 270px;
     width: 382.5px;
     height: 270px;
+    .goBack {
+      top: -25px;
+      right: 150px;
+      img {
+        width: 100px;
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
     width: 460px;
     min-height: 320px;
     max-height: 350px;
+    .goBack {
+      top: -20px;
+      right: 60px;
+      img {
+        width: 110px;
+      }
+    }
   }
   @media screen and (min-width: 1024px) {
     background-size: contain;
     background-repeat: no-repeat;
+    .goBack {
+      top: -20px;
+      right: -80px;
+      img {
+        width: 120px;
+      }
+    }
   }
+
+  @media screen and (min-width: 1440px) {
+    .goBack {
+      top: -20px;
+      right: -280px;
+      img {
+        width: 120px;
+      }
+    }
+  }
+
   @media screen and (min-width: 1920px) {
     min-height: 450px;
     min-width: 600px;
+    .goBack {
+      right: -380px;
+      img {
+        width: 180px;
+      }
+    }
   }
   @media screen and (min-width: 2560px) {
+    .goBack {
+      position: absolute;
+      z-index: 9;
+      top: -20px;
+      right: -700px;
+      img {
+        width: 200px;
+      }
+    }
   }
 `;
 

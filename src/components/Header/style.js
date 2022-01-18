@@ -1,48 +1,51 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const IconFighter = styled.img`
-    width: 60%;
+  width: 50%;
 `;
 
 export const DivLogo = styled.img`
-    width: 150px;
-    /* desktop width: 240px; */
-    padding-top: 10%;
+  width: 100px;
+  /* desktop width: 240px; */
+  padding-top: 10%;
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 `;
 export const DivTitle = styled.img`
-    width: 260px;
-    /* desktop width: 400px; */
+  width: 200px;
+  /* desktop width: 400px; */
 `;
 export const DivTop = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    button{
-        border:none;
-        background-color: Transparent;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  button {
+    border: none;
+    background-color: Transparent;
+  }
 `;
 
 export const Container = styled.header`
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 3px 5px rgba(200, 200, 200, 0.98);
+
+  div {
+    margin: 15px;
     display: flex;
     justify-content: center;
-    text-shadow: 1px 3px 5px rgba(200,200,200,0.98);
+    align-items: center;
 
-    div {
-        margin: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-            margin: 0;
-            font-size: 40px;
-            
-        }
-
-        button {
-            margin-right: 10px;
-        }
+    h3 {
+      margin: 0;
+      font-size: 40px;
     }
+
+    button {
+      margin-right: 10px;
+    }
+  }
 `;
