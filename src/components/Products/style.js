@@ -32,6 +32,9 @@ export const BoxList = styled.div`
     justify-content: space-between;
     align-items: center;
   }
+  @media screen and (max-height: 758px){
+    min-height: 70vh;
+  }
   @media screen and (min-width: 375px) {
 
     height: 10vw;
