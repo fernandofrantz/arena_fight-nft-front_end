@@ -12,6 +12,7 @@ export const ContainerList = styled.div`
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-top: -50px;
   }
 `;
 
@@ -19,7 +20,7 @@ export const BoxList = styled.div`
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  margin-top: 60px;
+  margin-top: 30px;
   justify-content: space-around;
   height: 11vw;
   width: 60px;

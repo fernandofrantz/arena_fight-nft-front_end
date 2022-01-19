@@ -15,6 +15,8 @@ export const Ul = styled.ul`
   li{
     margin: 10px;
     color: whitesmoke;
+    font-size: 20px;
+
   }
 
   li:hover {
@@ -57,7 +59,7 @@ export const Ul = styled.ul`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     img {
-      width: 35vw;
+      width: 25vw;
       margin-bottom: 25px;
       margin-right: 1px;
     }
