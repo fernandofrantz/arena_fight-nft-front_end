@@ -1,10 +1,13 @@
 import styled from "styled-components";
-import background from "../../assets/images/image8.png";
+import background from "../../assets/images/bg72.webp";
 
 export const Bgplay = styled.div`
   background-image: url(${background});
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  background-position-x: center;
   background-size: cover;
-  background-position: inherit;
 `;
 
 export const StyledPlay = styled.div`
@@ -36,7 +39,7 @@ export const StyledPlay = styled.div`
 
 export const MainBar = styled.div`
   width: 90%;
-  height: 50px;
+  height: 60px;
 
   background-color: #d4d4d460;
 
@@ -56,13 +59,13 @@ export const MainBar = styled.div`
   }
 
   .aftArea {
-    width: 50px;
+    width: 70px;
     height: 20px;
   }
 
   .claimButton {
-    width: 30px;
-    height: 15px;
+    width: 55px;
+    height: 19px;
   }
 
   .logo {
@@ -71,7 +74,7 @@ export const MainBar = styled.div`
   }
 
   .mintFighter {
-    width: 65px;
+    width: 75px;
     margin: 0px;
   }
 
@@ -82,16 +85,16 @@ export const MainBar = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    height: 60px;
+    height: 80px;
 
     .aftArea {
-      width: 90px;
-      height: 30px;
+      width: 100px;
+      height: 35px;
     }
 
     .claimButton {
-      width: 50px;
-      height: 28px;
+      width: 70px;
+      height: 34px;
     }
 
     .logo {
@@ -100,13 +103,13 @@ export const MainBar = styled.div`
     }
 
     .mintFighter {
-      width: 85px;
+      width: 100px;
     }
   }
 
   @media screen and (min-width: 1024px) {
     width: 70%;
-    height: 60px;
+    height: 70px;
 
     .aftArea {
       width: 120px;
