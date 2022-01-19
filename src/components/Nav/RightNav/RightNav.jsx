@@ -3,6 +3,10 @@ import { Ul } from "./styles";
 import whitepaper from "../../../assets/images/Buttons/WhitepaperButton.png";
 import playNow from "../../../assets/images/Buttons/PlayNow.png";
 import { useNavigate } from "react-router-dom";
+import bsc from '../../../assets/images/Buttons/BscScan-logo-light.png'
+import connect from '../../../assets/images/Buttons/connect.png'
+import disconnect from '../../../assets/images/Buttons/disconnect.png'
+
 
 const RightNav = ({ open }) => {
   const navigate = useNavigate();
@@ -13,8 +17,10 @@ const RightNav = ({ open }) => {
 
   return (
     <Ul open={open}>
+      <img src={connect} alt=""></img>
       <img onClick={() => sendTo("/play")} src={playNow} alt="" />
-      <button>contract</button>
+      <img src={bsc} alt=""></img>
+      
       <a href="https://higor-vidal.gitbook.io/areafight/">
         <img src={whitepaper} alt="" />
       </a>

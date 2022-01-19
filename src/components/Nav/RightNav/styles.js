@@ -9,10 +9,15 @@ export const Ul = styled.ul`
   flex-wrap: nowrap;
   justify-content: flex-start;
   img {
-    width: 125px;
+    width: 100px;
     margin-bottom: 1px;
     margin-right: 15px;
   }
+
+  img:hover {
+    cursor: pointer;
+  }
+  
   button {
     margin: 1px;
     margin-bottom: 1px;
@@ -30,7 +35,7 @@ export const Ul = styled.ul`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     img {
-      width: 55vw;
+      width: 45vw;
       margin-bottom: 25px;
       margin-right: 1px;
 

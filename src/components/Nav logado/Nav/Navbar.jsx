@@ -19,6 +19,7 @@ const Navbar = () => {
         <p onClick={() => sendTo("/")}>Home</p>
         <p onClick={() => sendTo("/play")}>Play Now</p>
         <p onClick={() => sendTo("/my-gym")}>My Gym</p>
+        <p onClick={() => sendTo("/my-gym")}>Hospital</p>
       </div>
       <Burger />
     </Nav>

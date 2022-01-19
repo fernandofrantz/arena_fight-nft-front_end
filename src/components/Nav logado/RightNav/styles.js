@@ -14,11 +14,23 @@ export const Ul = styled.ul`
   justify-content: flex-start;
   li{
     margin: 10px;
+    color: whitesmoke;
   }
+
+  li:hover {
+    transition: 300ms;
+    cursor: pointer;
+    color: blueviolet;
+  }
+
   img {
     width: 125px;
     margin-bottom: 1px;
     margin-right: 15px;
+  }
+
+  img {
+    cursor: pointer;
   }
   button {
     margin: 1px;
