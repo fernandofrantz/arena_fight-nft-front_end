@@ -1,10 +1,13 @@
 import styled from "styled-components";
-import background from '../../assets/images/bgpresale.png';
+import background from '../../assets/images/bg72.webp';
 
 export const Bgpresale = styled.div`
   background-image: url(${background});
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  background-position-x: center;
   background-size: cover;
-    background-position: center;
 `;
 
 export const PreSalePage = styled.div`
