@@ -342,15 +342,15 @@ export const FigthersBox = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    height: 250px;
+    height: 300px;
     .boxRandomFighters {
       .randomFighters {
         .fighters {
-          width: 24%;
+          width: 130px;
         }
       }
       .txtfighters {
-        width: 60%;
+        width: 300px;
       }
     }
   }
