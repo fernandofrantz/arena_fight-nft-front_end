@@ -6,7 +6,7 @@ export const Linv = styled.li`
 
 export const Ul = styled.ul`
   list-style: none;
-  z-index: 9;
+  z-index: 15;
   display: flex;
   align-items: center;
   flex-direction: row;

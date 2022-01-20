@@ -2,8 +2,8 @@ import styled from "styled-components";
 import background from "../../assets/gympix.png";
 
 export const Container = styled.div`
-  margin: 0;
-  padding: 0;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   background-image: url(${background});
   background-repeat: no-repeat;
   color: #fff;
@@ -15,7 +15,6 @@ export const Container = styled.div`
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   .goBack {

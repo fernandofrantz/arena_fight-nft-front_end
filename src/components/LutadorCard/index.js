@@ -29,9 +29,6 @@ export const LutadorCard = () => {
 
   return (
     <Container>
-      <div className="goBack">
-        <img onClick={() => sendTo("/my-gym")} src={goBack} alt=""></img>
-      </div>
       <Lutador src={lutador} />
       <Xp src={xp} />
       <Thirst src={thirst} />

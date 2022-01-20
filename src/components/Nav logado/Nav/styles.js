@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   align-items: center;
   p {
     margin: 10px;
+    color: whitesmoke;
   }
 
   p:hover {
@@ -39,6 +40,6 @@ export const Nav = styled.nav`
     }
   }
   @media (min-width: 769px) {
-    background-color: #5ab5d7;
+    background-color: #00000080;
   }
 `;

@@ -266,8 +266,8 @@ export const FigthersBox = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 
-  width: 80%;
-  height: 150px;
+  width: 85%;
+  height: 300px;
 
   margin: 40px 0px 0px 0px;
 

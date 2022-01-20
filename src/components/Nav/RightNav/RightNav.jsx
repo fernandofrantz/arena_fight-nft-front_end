@@ -17,10 +17,8 @@ const RightNav = ({ open }) => {
 
   return (
     <Ul open={open}>
-      <img src={connect} alt=""></img>
       <img onClick={() => sendTo("/play")} src={playNow} alt="" />
       <img src={bsc} alt=""></img>
-      
       <a href="https://higor-vidal.gitbook.io/areafight/">
         <img src={whitepaper} alt="" />
       </a>
