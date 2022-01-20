@@ -42,4 +42,16 @@ export const Nav = styled.nav`
   @media (min-width: 769px) {
     background-color: #00000080;
   }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 150px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
 `;
