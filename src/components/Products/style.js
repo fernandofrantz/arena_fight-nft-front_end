@@ -117,11 +117,8 @@ export const ContainerList = styled.div`
 
 export const BoxList = styled.div`
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
-  height: 6vw;
-  min-height: 100vh;
   width: 150px;
   align-items: center;
   flex-direction: column;
