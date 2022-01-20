@@ -8,7 +8,6 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   color: #fff;
   width: 100vw;
-  height: 100%;
   font-family: "Oswald", sans-serif;
   background-color: #dc8a59;
   background-position-x: center;
