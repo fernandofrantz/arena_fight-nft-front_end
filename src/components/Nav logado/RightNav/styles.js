@@ -14,10 +14,36 @@ export const Ul = styled.ul`
   justify-content: flex-start;
   li{
     margin: 10px;
-    color: whitesmoke;
+    color: whitesmoke
     font-size: 20px;
-
   }
+
+  .divClaim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .claimButton {
+    width: 60px;
+    height: 25px;
+    margin: 0px;
+  }
+
+  .hospital {
+    width: 70px;
+  }
+  .mintFighter {
+    width: 70px;
+  }
+  .connect {
+    width: 60px;
+  }
+
+  li img {
+    margin: 0px;
+  }
+
 
   li:hover {
     transition: 300ms;
@@ -26,7 +52,7 @@ export const Ul = styled.ul`
   }
 
   img {
-    width: 125px;
+    width: 90px;
     margin-bottom: 1px;
     margin-right: 15px;
   }
@@ -34,6 +60,7 @@ export const Ul = styled.ul`
   img {
     cursor: pointer;
   }
+
   button {
     margin: 1px;
     margin-bottom: 1px;

@@ -38,32 +38,6 @@ export const PlayNow = () => {
       <Bgplay>
         <Navbar />
         <StyledPlay>
-          {/*<div className="BackDiv">
-            <img onClick={() => sendTo("/")} src={BackButton} alt="" />
-          </div>*/}
-          <MainBar>
-            <div className="aft">
-              <img className="aftArea" src={aftArea} alt="" />
-              <img
-                onClick={claimTokens}
-                className="claimButton"
-                src={claimButton}
-                alt=""
-              />
-            </div>
-            {/*<div>
-              <img
-                onClick={() => sendTo("/")}
-                className="logo"
-                src={Logo}
-                alt=""
-              />
-            </div>*/}
-            <div>
-              <img className="mintFighter" src={MintFighter} alt="" />
-            </div>
-          </MainBar>
-
           <CountryFights>
             <img className="country" src={mexico} alt="" />
             <img className="country" src={brazil} alt="" />

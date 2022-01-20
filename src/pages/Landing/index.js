@@ -105,7 +105,6 @@ export const Landing = () => {
           </div>
         </div>
         }
-          
           <div className="firstBg">
             <LogoAndButtons>
               <img className="logo" src={logo} alt=""></img>
