@@ -7,7 +7,6 @@ export const Container = styled.button`
   background-color: Transparent;
   background-size: cover;
   background-position-x: center;
-  height: fit-content;
 
   img {
     width: 100%;

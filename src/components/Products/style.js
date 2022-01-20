@@ -122,6 +122,8 @@ export const BoxList = styled.div`
   width: 150px;
   align-items: center;
   flex-direction: column;
+  height: 300px;
+
   div {
     flex-basis: 250px;
     display: flex;
@@ -130,7 +132,6 @@ export const BoxList = styled.div`
     align-items: center;
   }
   @media screen and (min-width: 375px) {
-    height: 10vw;
   }
   @media screen and (min-width: 768px) {
     width: 60%;
