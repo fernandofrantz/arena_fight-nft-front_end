@@ -1,13 +1,10 @@
 import styled from "styled-components";
-import background from "../../assets/images/bg72.webp";
+import background from "../../assets/images/image8.png";
 
 export const Bgplay = styled.div`
   background-image: url(${background});
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100%;
-  background-position-x: center;
   background-size: cover;
+  background-position: inherit;
 `;
 
 export const StyledPlay = styled.div`
@@ -39,7 +36,7 @@ export const StyledPlay = styled.div`
 
 export const MainBar = styled.div`
   width: 90%;
-  height: 60px;
+  height: 50px;
 
   background-color: #d4d4d460;
 
@@ -59,13 +56,13 @@ export const MainBar = styled.div`
   }
 
   .aftArea {
-    width: 70px;
+    width: 50px;
     height: 20px;
   }
 
   .claimButton {
-    width: 55px;
-    height: 19px;
+    width: 30px;
+    height: 15px;
   }
 
   .logo {
@@ -74,7 +71,7 @@ export const MainBar = styled.div`
   }
 
   .mintFighter {
-    width: 75px;
+    width: 65px;
     margin: 0px;
   }
 
@@ -85,16 +82,16 @@ export const MainBar = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    height: 80px;
+    height: 60px;
 
     .aftArea {
-      width: 100px;
-      height: 35px;
+      width: 90px;
+      height: 30px;
     }
 
     .claimButton {
-      width: 70px;
-      height: 34px;
+      width: 50px;
+      height: 28px;
     }
 
     .logo {
@@ -103,13 +100,13 @@ export const MainBar = styled.div`
     }
 
     .mintFighter {
-      width: 100px;
+      width: 85px;
     }
   }
 
   @media screen and (min-width: 1024px) {
     width: 70%;
-    height: 70px;
+    height: 60px;
 
     .aftArea {
       width: 120px;
@@ -168,16 +165,21 @@ export const CountryFights = styled.div`
     width: 120px;
   }
 
-    @media screen and (min-width:375px){
-      .country {
-            width: 140px;
-        }
+  @media screen and (min-width: 375px) {
+    .country {
+      width: 160px;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        .country {
-            width: 300px;
-        }
+  @media screen and (min-width: 650px) {
+    .country {
+      width: 200px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .country {
+      width: 300px;
     }
   }
 
@@ -188,11 +190,10 @@ export const CountryFights = styled.div`
     }
   }
 
-    @media screen and (min-width: 2560px) {
-      margin: 100px 0px 0px 0px;
-      .country {
-        width: 550px;
-      }
+  @media screen and (min-width: 2560px) {
+    margin: 100px 0px 0px 0px;
+    .country {
+      width: 550px;
     }
   }
 `;

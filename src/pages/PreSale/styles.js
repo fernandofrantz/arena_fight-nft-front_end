@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from '../../assets/images/bg72.webp';
+import background from "../../assets/images/bg72.webp";
 
 export const Bgpresale = styled.div`
   background-image: url(${background});
@@ -15,15 +15,13 @@ export const PreSalePage = styled.div`
 
   min-height: 100vh;
 
-  padding-bottom:50px;
-
+  padding-bottom: 50px;
 
   .div {
     background: url(Background);
-    background-position: center; 
+    background-position: center;
     background-size: cover;
   }
-
 
   background-image: url(Background);
   background-size: cover;
@@ -45,7 +43,7 @@ export const PreSalePage = styled.div`
       width: 25%;
       align-items: flex-start;
       margin-top: 10px;
-      max-width:120px;
+      max-width: 120px;
     }
   }
   .BackDiv img:hover {
@@ -54,7 +52,7 @@ export const PreSalePage = styled.div`
 
   @media screen and (min-width: 768px) {
     .preSaleText {
-      margin-bottom: 40px
+      margin-bottom: 40px;
     }
   }
 
@@ -63,7 +61,6 @@ export const PreSalePage = styled.div`
       max-width: 550px;
     }
   }
-
 `;
 
 export const StyledBar = styled.div`
@@ -73,7 +70,6 @@ export const StyledBar = styled.div`
 
   background-color: #d4d4d460;
   border-radius: 5px;
-
 
   margin: 50px 0px 0px 0px;
   margin-bottom: 15%;
@@ -114,21 +110,21 @@ export const StyledBar = styled.div`
       width: 100%;
       height: 100%;
     }
-    .play:hover{
+    .play:hover {
       cursor: pointer;
     }
-
   }
-  
+
   .Buttons {
     height: 30px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 70%;
 
     .divButtons {
-      .whitesection, .playsection {
+      .whitesection,
+      .playsection {
         width: 25%;
       }
 
@@ -143,7 +139,8 @@ export const StyledBar = styled.div`
 
     margin: 10px 0px 80px 0px;
     .divButtons {
-      .whitesection, .playsection {
+      .whitesection,
+      .playsection {
         width: 20%;
       }
       .logo {
@@ -157,7 +154,8 @@ export const StyledBar = styled.div`
 
     margin: 40px 0px 120px 0px;
     .divButtons {
-      .whitesection, .playsection {
+      .whitesection,
+      .playsection {
         width: 25%;
       }
       .logo {
@@ -171,7 +169,8 @@ export const StyledBar = styled.div`
 
     margin: 70px 0px 150px 0px;
     .divButtons {
-      .whitesection, .playsection {
+      .whitesection,
+      .playsection {
         width: 20%;
       }
       .logo {
@@ -180,8 +179,6 @@ export const StyledBar = styled.div`
     }
   }
 `;
-
-
 
 export const SectionNfts = styled.section`
   display: flex;
@@ -193,7 +190,44 @@ export const SectionNfts = styled.section`
   height: auto;
 
   img {
-    margin: 0px; 
+    margin: 0px;
   }
 `;
 
+export const CardChest = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 200px;
+
+  margin: 50px 25px 0px 25px;
+
+  img {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 768px) {
+    img {
+      width: 170px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 50px 50px 0px 25px;
+
+    img {
+      width: 220px;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    margin: 50px 50px -50px 25px;
+
+    img {
+      width: 260px;
+    }
+  }
+`;

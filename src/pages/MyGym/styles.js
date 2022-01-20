@@ -14,4 +14,5 @@ export const Container = styled.div`
   background-position-x: center;
   background-size: cover;
   min-height: 100vh;
+  padding-bottom: 150px;
 `;

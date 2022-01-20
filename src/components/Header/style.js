@@ -2,12 +2,23 @@ import styled from "styled-components";
 
 export const IconFighter = styled.img`
   width: 50%;
+
+  @media screen and (min-width: 1440px) {
+    width: 60%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 80%;
+  }
 `;
 
 export const DivLogo = styled.img`
-  width: 100px;
+  width: 180px;
   /* desktop width: 240px; */
-  padding-top: 10%;
+
+  @media screen and (min-width: 426px) {
+    width: 300px;
+  }
 
   @media screen and (min-width: 769px) {
     display: none;
@@ -16,6 +27,22 @@ export const DivLogo = styled.img`
 export const DivTitle = styled.img`
   width: 200px;
   /* desktop width: 400px; */
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 600px;
+  }
 `;
 export const DivTop = styled.div`
   display: flex;
@@ -37,18 +64,7 @@ export const Container = styled.header`
     margin: 15px;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center;
-=======
-    text-shadow: 1px 3px 5px rgba(200,200,200,0.98);
-    margin-top: 60px;
-
-    div {
-        margin: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
->>>>>>> 524e2aebcb44b3a9743b9383ccf7036e50135b3f
 
     h3 {
       margin: 0;
@@ -58,5 +74,10 @@ export const Container = styled.header`
     button {
       margin-right: 10px;
     }
+  }
+
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    top: 100px;
   }
 `;

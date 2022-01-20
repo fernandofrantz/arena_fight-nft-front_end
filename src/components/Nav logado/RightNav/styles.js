@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const Linv = styled.li`
-
-`;
+export const Linv = styled.li``;
 
 export const Ul = styled.ul`
   list-style: none;
@@ -12,9 +10,9 @@ export const Ul = styled.ul`
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  li{
+  li {
     margin: 10px;
-    color: whitesmoke
+    color: whitesmoke;
     font-size: 20px;
   }
 
@@ -26,8 +24,12 @@ export const Ul = styled.ul`
 
   .claimButton {
     width: 60px;
-    height: 25px;
+    height: 35px;
     margin: 0px;
+  }
+
+  .aftcounter {
+    width: 130px;
   }
 
   .hospital {
@@ -44,7 +46,6 @@ export const Ul = styled.ul`
     margin: 0px;
   }
 
-
   li:hover {
     transition: 300ms;
     cursor: pointer;
@@ -55,9 +56,6 @@ export const Ul = styled.ul`
     width: 90px;
     margin-bottom: 1px;
     margin-right: 15px;
-  }
-
-  img {
     cursor: pointer;
   }
 
@@ -66,14 +64,29 @@ export const Ul = styled.ul`
     margin-bottom: 1px;
     margin-right: 15px;
   }
-  .last{
+  .last {
     margin-bottom: 25px;
   }
+
+  .btn {
+    width: 80px;
+  }
+
+  @media screen and (min-width: 425px) {
+    .btn {
+      width: 100px;
+    }
+  }
+
   @media (min-width: 769px) {
     .desktopnav {
       display: none;
     }
+    .btn {
+      width: 70px;
+    }
   }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #0d2538;
@@ -93,6 +106,9 @@ export const Ul = styled.ul`
     button {
       margin: 1px;
       margin-bottom: 25px;
+    }
+    .btn {
+      width: 90px;
     }
   }
 `;

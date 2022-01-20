@@ -25,8 +25,16 @@ import Logo from "../../assets/images/Logo.png";
 import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
 
+import trainFighter from "../../assets/images/NFT/train.png";
+
 import { CardPreSale } from "../../components/CardPreSale";
-import { Bgpresale, PreSalePage, SectionNfts, StyledBar, } from "./styles";
+import {
+  Bgpresale,
+  CardChest,
+  PreSalePage,
+  SectionNfts,
+  StyledBar,
+} from "./styles";
 import { SocialButtons } from "../../components/SocialButtons";
 
 import { useNavigate } from "react-router-dom";
@@ -40,84 +48,85 @@ export const PreSale = () => {
 
   return (
     <>
-    <Bgpresale>
-      <PreSalePage>
-        <div className="BackDiv">
-          <img onClick={() => sendTo("/")} src={BackButton} alt="" />
-        </div>
-        <StyledBar>
-          <div className="divButtons">
-            <section className="whitesection">
-              <img
-                onClick={() => sendTo("/play")}
-                className="Buttons play"
-                src={PlayNow}
-                alt=""
-              ></img>
-            </section>
-            <img
-              onClick={() => sendTo("/")}
-              className="logo"
-              src={Logo}
-              alt=""
-            />
-            <section className="playsection">
-              <a
-                href="https://higor-vidal.gitbook.io/areafight/"
-                target="_blank"
-                rel="noreferrer"
-              >
+      <Bgpresale>
+        <PreSalePage>
+          <div className="BackDiv">
+            <img onClick={() => sendTo("/")} src={BackButton} alt="" />
+          </div>
+          <StyledBar>
+            <div className="divButtons">
+              <section className="whitesection">
                 <img
-                  className="Buttons white"
-                  src={WhitepaperButton}
+                  onClick={() => sendTo("/play")}
+                  className="Buttons play"
+                  src={PlayNow}
                   alt=""
                 ></img>
-              </a>
-            </section>
-          </div>
-        </StyledBar>
-
-        <img className="preSaleText" src={PreSaleText} alt=""></img>
-
-        <SectionNfts>
-          <CardPreSale
-            cls="1"
-            str={Bella_44STRcut}
-            fighter={Bella_ThornRosecut}
-            price={Bella_150busdcut}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            cls="2"
-            str={Barussi_69STR}
-            fighter={Barussi_HeavyFist}
-            price={Barussi_250BUSD}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            cls="3"
-            str={Dimitry_94cut}
-            fighter={Dimitry_WarTankcut}
-            price={Dimitry_320busdcut}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            cls="4"
-            str={Ulisses_139STR}
-            fighter={Ulisses_DeathDance}
-            price={Ulisses_450busd}
-            buyNow={BuyNow}
-          />
-          <CardPreSale
-            cls="5"
-            str={Wonakashi_189STR}
-            fighter={Wonakashi_CalmLotus}
-            price={Wonakashi_600bus}
-            buyNow={BuyNow}
-          />
-        </SectionNfts>
-        <SocialButtons />
-      </PreSalePage>
+              </section>
+              <img
+                onClick={() => sendTo("/")}
+                className="logo"
+                src={Logo}
+                alt=""
+              />
+              <section className="playsection">
+                <a
+                  href="https://higor-vidal.gitbook.io/areafight/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="Buttons white"
+                    src={WhitepaperButton}
+                    alt=""
+                  ></img>
+                </a>
+              </section>
+            </div>
+          </StyledBar>
+          <img className="preSaleText" src={PreSaleText} alt=""></img>
+          <SectionNfts>
+            <CardChest>
+              <img src={trainFighter} alt=""></img>
+            </CardChest>
+            <CardPreSale
+              cls="1"
+              str={Bella_44STRcut}
+              fighter={Bella_ThornRosecut}
+              price={Bella_150busdcut}
+              buyNow={BuyNow}
+            />
+            <CardPreSale
+              cls="2"
+              str={Barussi_69STR}
+              fighter={Barussi_HeavyFist}
+              price={Barussi_250BUSD}
+              buyNow={BuyNow}
+            />
+            <CardPreSale
+              cls="3"
+              str={Dimitry_94cut}
+              fighter={Dimitry_WarTankcut}
+              price={Dimitry_320busdcut}
+              buyNow={BuyNow}
+            />
+            <CardPreSale
+              cls="4"
+              str={Ulisses_139STR}
+              fighter={Ulisses_DeathDance}
+              price={Ulisses_450busd}
+              buyNow={BuyNow}
+            />
+            <CardPreSale
+              cls="5"
+              str={Wonakashi_189STR}
+              fighter={Wonakashi_CalmLotus}
+              price={Wonakashi_600bus}
+              buyNow={BuyNow}
+            />
+          </SectionNfts>
+          <SocialButtons />
+        </PreSalePage>
       </Bgpresale>
     </>
   );

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import background1 from "../../assets/images/bgzin.png";
+// import background1 from "../../assets/images/bgzin.png";
+import background1 from "../../assets/images/bgLanding.png";
 import box from "../../assets/images/boxzinha.png";
 
 export const Bg1 = styled.div`
