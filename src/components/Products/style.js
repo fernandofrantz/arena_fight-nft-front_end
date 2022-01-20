@@ -6,6 +6,9 @@ export const ContainerList = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  .allFighters {
+    display: none;
+  }
   .divlutadores {
     display: flex;
     align-items: center;
@@ -52,6 +55,12 @@ export const ContainerList = styled.div`
       .hospital {
         width: 140px;
       }
+    }
+    .allFighters {
+      display: flex;
+    }
+    .oneFighter {
+      display: none;
     }
   }
 
@@ -112,7 +121,8 @@ export const BoxList = styled.div`
   flex-direction: row;
   justify-content: space-around;
   height: 6vw;
-  width: 60px;
+  min-height: 100vh;
+  width: 150px;
   align-items: center;
   flex-direction: column;
   div {
@@ -121,9 +131,6 @@ export const BoxList = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-  @media screen and (max-height: 758px) {
-    min-height: 70vh;
   }
   @media screen and (min-width: 375px) {
     height: 10vw;
