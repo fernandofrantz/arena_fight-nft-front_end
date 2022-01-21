@@ -55,7 +55,7 @@ export const Ul = styled.ul`
   img {
     width: 90px;
     margin-bottom: 1px;
-    margin-right: 15px;
+    /* margin-right: 15px; */
     cursor: pointer;
   }
 

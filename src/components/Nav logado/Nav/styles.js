@@ -48,7 +48,7 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     img {
-      width: 150px;
+      width: 130px;
     }
     img:hover {
       cursor: pointer;
