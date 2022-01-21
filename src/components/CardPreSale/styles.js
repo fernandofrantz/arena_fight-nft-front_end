@@ -11,9 +11,12 @@ export const StyledCardPreSale = styled.div`
 
   margin: 50px 25px 0px 25px;
 
-
   img {
     width: 100%;
+  }
+
+  img:hover {
+    cursor: pointer;
   }
 
   .str {
@@ -37,7 +40,7 @@ export const StyledCardPreSale = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    margin:50px 50px 100px 50px;
+    margin: 50px 50px 100px 50px;
 
     img {
       width: 160%;
@@ -59,5 +62,4 @@ export const StyledCardPreSale = styled.div`
       width: 200%;
     }
   }
-
 `;

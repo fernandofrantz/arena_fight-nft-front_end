@@ -69,8 +69,21 @@ export const ContainerList = styled.div`
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      margin-right: 300px;
-      margin-bottom: 50px;
+      position: relative;
+      top: -250px;
+      right: 20px;
+      .mint {
+        width: 120px;
+      }
+      .hospital {
+        width: 140px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .imgBox {
+      top: -300px;
       .mint {
         width: 140px;
       }
@@ -80,9 +93,9 @@ export const ContainerList = styled.div`
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1920px) {
     .imgBox {
-      margin-right: 250px;
+      top: -300px;
       .mint {
         width: 160px;
       }
@@ -92,25 +105,15 @@ export const ContainerList = styled.div`
     }
   }
 
-  @media screen and (min-width: 1920px) {
-    .imgBox {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 400px;
-      margin-bottom: 100px;
-      .mint {
-        width: 200px;
-      }
-      .hospital {
-        width: 220px;
-      }
-    }
-  }
-
   @media screen and (min-width: 2560px) {
     .imgBox {
-      margin-right: 550px;
+      top: -300px;
+      .mint {
+        width: 180px;
+      }
+      .hospital {
+        width: 200px;
+      }
     }
   }
 `;

@@ -18,14 +18,16 @@ import Wonakashi_189STR from "../../assets/images/NFT/Wonakashi/Wonakashi_189STR
 import Wonakashi_600bus from "../../assets/images/NFT/Wonakashi/Wonakashi_600buscut.png";
 import Wonakashi_CalmLotus from "../../assets/images/NFT/Wonakashi/Wonakashi_CalmLotuscut.png";
 
+import trainFighter from "../../assets/images/NFT/tranFighter.png";
+import randomStr from "../../assets/images/randomStr.png";
+import busd50 from "../../assets/images/busd50.png";
+
 import BuyNow from "../../assets/images/Buttons/BuyNow.png";
 import PlayNow from "../../assets/images/Buttons/PlayNow.png";
 import PreSaleText from "../../assets/images/Buttons/PreSale.png";
 import Logo from "../../assets/images/Logo.png";
 import WhitepaperButton from "../../assets/images/Buttons/WhitepaperButton.png";
 import BackButton from "../../assets/images/Buttons/BackButton.png";
-
-import trainFighter from "../../assets/images/NFT/train.png";
 
 import { CardPreSale } from "../../components/CardPreSale";
 import {
@@ -86,9 +88,13 @@ export const PreSale = () => {
           </StyledBar>
           <img className="preSaleText" src={PreSaleText} alt=""></img>
           <SectionNfts>
-            <CardChest>
-              <img src={trainFighter} alt=""></img>
-            </CardChest>
+            <CardPreSale
+              cls="6"
+              str={randomStr}
+              fighter={trainFighter}
+              price={busd50}
+              buyNow={BuyNow}
+            />
             <CardPreSale
               cls="1"
               str={Bella_44STRcut}
