@@ -125,7 +125,6 @@ export const BoxList = styled.div`
   height: 300px;
 
   div {
-    flex-basis: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

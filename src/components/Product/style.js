@@ -10,7 +10,6 @@ export const Container = styled.button`
 
   img {
     width: 100%;
-    height: fit-content;
     margin: 0px;
   }
   transition: all 200ms ease-in;
